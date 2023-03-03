@@ -1,0 +1,135 @@
+@layer compose, compose.ia, compose.ia.home, compose.flow;
+@layer util, util.type, util.type.copy, util.type.sizing, util.flow;
+@layer block;
+@layer except;
+
+/* ==================================================================
+    CUBE : https://cube.fyi: Layers by C U B E: Composition, Utility, Blocks, Exceptions
+    1) Composition: Macro Layouts, Global Flow (spacing), Micro-architecture wrappers/panels.
+    2) Utilitiy: Reusable helpers from a single CSS property, or a concise group of related properties
+    3) Block: Apply a large group of unrelated CSS properties that extent Composition, or Utility, to
+        a discrete micro layer architecture
+    4) Exception: An exception is a deviation from the Block, i.e. by State Change / Interactivity
+        i.e. Provide a concise variation to a block; Use data attributes.
+    https://andy-bell.co.uk/cube-css/
+    ================================================================== */
+
+html {}
+
+body {}
+
+@layer compose {
+
+	@layer compose.ia {
+
+		@layer compse.ia.home {
+
+		}
+
+	}
+
+}
+
+@layer util {
+
+	:root {
+		--surface-color: #34495e;
+		--text-color: #fff;
+		--edge-color: #2c3e50;
+	}
+
+	.surface {
+		background-color: var(--surface-color);
+		color: var(--text-color);
+	}
+
+	@layer util.type {
+
+		:root {
+			--family: Helvetica;
+			--font-size: 4em;
+			--weight: bold;
+		}
+
+		@layer util.type.copy {
+
+			.txt {
+				font-family: var(--family);
+				font-size: var(--font-size);
+				font-weight: var(--weight);
+			}
+
+		}
+
+		@layer util.space {
+			:root {
+				--radius-space:  6px;
+				--radius-inner: 4px;
+			}
+
+			/* Andy Bell (March 1, 2023) Relative Rounded Corners
+				Last Accessed: 2023-03-3
+				https://set.studio/relative-rounded-corners/
+			*/
+			.outer-border {
+				--border-size: var( --radius-space );
+				background-color: var( --surface-center );
+				border: var(--border-size) var( --edge-color ) solid;
+				border-radius: calc( var( --radius-inner ) + var( --radius-space ) );
+			}
+
+			.inner-border {
+				--border-size: var( --radius-space );
+				border: var(--border-size) var( --edge-color ) solid;
+				border-radius:  var( --radius-inner ) ;
+			}
+
+		}
+	}
+}
+
+@layer block {
+
+	:root {
+		--grid-dimension: 600px;
+		--grid-size-index: 3;
+		--grid-min: 100px;
+		--box-align: center;
+
+	}
+
+	@layer surface {
+		/*
+			Source CSS https://codepen.io/shammadahmed/pen/JOWEGW
+			Adapted: CJ to be more programmatic by using custom properties
+			Adapted: Move selectors to own Util and Block Classes. -> Line:
+			Adapted: Added minmax for mobile min sizing, and default 100px fallback size for media queries
+			Adapted: Switch to logical properties;
+		*/
+
+		.game-board {
+			block-size: var( --grid-dimension );
+			display: grid;
+			grid-template:
+				repeat(var( --grid-size-index ), minmax( var( --grid-min, 100px ) , 1fr ) ) /
+				repeat(var( --grid-size-index ),  minmax( var( --grid-min, 100px ) , 1fr ) );
+			inline-size: var( --grid-dimension );
+			margin: 0 auto;
+		}
+
+		/*
+			Source CSS https://codepen.io/shammadahmed/pen/JOWEGW
+			Adapted: Extracted Surface Styles into own classes. -> Lines: 35-59
+			Adapted: Extrated Border styles into respective relative border util classes. -> Lines: 74-86
+		*/
+		.box
+		{
+			align-items: var( --box-align );
+			display: flex;
+			justify-content: var( --box-align );
+		}
+
+	}
+
+}
+
