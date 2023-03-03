@@ -68,7 +68,7 @@ and may align with to [Semantic Versioning](http://semver.org/).
 
 ### To Do - Test a front-end web application through the development, implementation and deployment stages
 
-- [ ] 2.1 ☑️❓❌**Write JavaScript code that passes through a linter (e.g. Jshint) with no significant issues.**
+- [❓] [2.1](#2.1) ☑️❓❌**Write JavaScript code that passes through a linter (e.g. Jshint) with no significant issues.**
 - [ ] 2.2 ☑️❓❌ Write custom HTML code that passes through the official W3C validator with no issues.
 - [ ] 2.3 ☑️❓❌ Write custom CSS code that passes through the official (Jigsaw) validator with no issues
 - [ ] 2.4 ☑️❓❌ *Code all external links to open in a separate tab when clicked*
