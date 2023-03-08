@@ -8,6 +8,18 @@ Three Grains and Toe is a
 
 ## **1. Project Goals**
 
+### <ins>Game Rules</ins>
+
+Here are the basic rules of Tic Tac Toe:
+
+- The game is played on a 3x3 grid.
+- There are two players, `X` and `O`.
+- Players take turns placing their symbol (`X` or `O`) on an empty cell.
+- The first player to get three of their symbols (`x3`) in a row (horizontally, vertically, or diagonally) wins the game.
+- If all cells on the board are occupied and no player has won, the game is a tie.
+
+> See the State, User Journey and Activity Diagrams below for more information on the implementation of these rules and game flow for each player.
+
 ### <ins>Developer Goals</ins>
 <!--
  Note: This developer learnt UML and software design by diagrams 20 years ago, under his Masters of Technology at RMIT (CS). This project is a showcase for some of these techniques under the Design section below.
@@ -150,6 +162,44 @@ graph TD
     J --P1-> M[Display Winning Message]
     K --P2-> N[Display Winning Message]
     L --> O[Display Tie Message]
+
+```
+
+### </ins>Activity Diagrams</ins>
+
+> Activity Diagrams are similar to both State and User journies, except they focus on the interations between the user and the game logic, i.e. the game methods/functions.
+
+- **Start Game**: The game is initialized and the game board check for playing readiness (on page load)
+  - **Initialise Game Board**: The game board is initialsed by clearing the board/setting up the board with empty cells.
+- **Set Current Player**: The game sets the current player to Player 1, and is always X symbol.
+  - **Current Player chooses Symbol**: _The game sets the current player to Player 1._
+  - **Wait for Move**: _The game waits for the current player to make a move._
+  - **Valid Move?**: _The game checks if the move made by the current player is valid._
+    - **No**: _If the move made by the current player is not valid, the game returns to waiting for a move from the current player._
+- **Handle Move**: If the move is valid, the game updates the game board with the current player's symbol and redraws the game board.
+- **Check for Win or Tie**: The game checks if there is a win or tie on the game board.
+- **End Game?**: The game checks if the game has ended due to a win or tie.
+  - **Display Result**: If the game has ended, the game displays the result to the user (either a win or tie) and prompts the user to either restart or exit the game.
+  - **Restart Game**: If the user chooses to restart the game, the game resets the game board and starts a new game.
+- **Exit Game**: _If the user chooses to exit the game, the game ends._
+
+_Italics_: Optional Functionality: Methods for the game activities. **MVP++**
+
+```mermaid
+
+graph LR
+    A[Start Game] --> B[Initialise Game Board]
+    B --> C[Set Current Player]
+    C --> D[Wait for Move]
+    D --> E{Valid Move?}
+    E -- Yes --> F[Handle Move]
+    F --> G[Check for Win or Tie]
+    G --> H{End Game?}
+    H -- Yes --> I[Display Result Message]
+    I --> J[Restart Game]
+    I --> K[Exit Game]
+    H -- No --> C
+    E -- No --> D
 
 ```
 

@@ -18,7 +18,13 @@ html {}
 
 body {}
 
+body * {
+	box-sizing: border-box;
+}
+
 @layer compose {
+
+
 
 	@layer compose.ia {
 
@@ -72,15 +78,16 @@ body {}
 				https://set.studio/relative-rounded-corners/
 			*/
 			.outer-border {
-				--border-size: var( --radius-space );
-				background-color: var( --surface-center );
-				border: var(--border-size) var( --edge-color ) solid;
+				--edge-space: var( --radius-space );
+				background-color: var( --surface-color );
+				border: var( --edge-space ) var( --edge-color ) solid;
 				border-radius: calc( var( --radius-inner ) + var( --radius-space ) );
+				/* box-shadow: ; */
 			}
 
 			.inner-border {
-				--border-size: var( --radius-space );
-				border: var(--border-size) var( --edge-color ) solid;
+				--edge-space: var( --radius-space );
+				border: var(--edge-space ) var( --edge-color ) solid;
 				border-radius:  var( --radius-inner ) ;
 			}
 
@@ -111,8 +118,8 @@ body {}
 			block-size: var( --grid-dimension );
 			display: grid;
 			grid-template:
-				repeat(var( --grid-size-index ), minmax( var( --grid-min, 100px ) , 1fr ) ) /
-				repeat(var( --grid-size-index ),  minmax( var( --grid-min, 100px ) , 1fr ) );
+				repeat( var( --grid-size-index ) , minmax( var( --grid-min, 100px ) , 1fr ) ) /
+				repeat( var( --grid-size-index ) ,  minmax( var( --grid-min, 100px ) , 1fr ) );
 			inline-size: var( --grid-dimension );
 			margin: 0 auto;
 		}

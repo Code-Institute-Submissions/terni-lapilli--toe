@@ -14,15 +14,12 @@
         <meta name="version" content="0.0.2">
         <meta name="color-scheme" content="dark">
         <meta
-            name="keywords"
-            content="Fowler,Charles,Clients,Designer,Web Designer,Developer,Software, Web
-            Devekoper,Frontend Developer,Code Institute,HTML,CSS,Modern CSS">
-            <meta name="description" content="The Digital Folio is a portfolio template site that could be
-            used to showcase the work and clients of myself, Charles J Fowler (aka CJ) as a web developer and
-            UX advisor. The site will be focused on promoting the past and current client projects, like Love Running and Codes Coffeehouse
-            as examples of potential services rendered. This site showcases the potential for hosting references to other hosted projects and
-            deliverables. This is a first version (v1.0.beta) proof of concept, project site for Code Institute's Diploma of Software Development">
+									name="keywords"
+									content="Fowler,Charles,Clients,Designer,Web Designer,Developer,Software, Web
+									Developer,Frontend Developer,Code Institute,HTML,CSS,Modern CSS">
+        <meta name="description" content="...">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<!--See [DoneLog: Placing CSS above headertag](_documentation\done.md#4.3)-->
 
         <link type="text/css" href="assets/styles/core.css" rel="stylesheet" >
 
@@ -31,45 +28,68 @@
            Welcome 3 Grains and Toe. Game Pad &amp; Home.
         </title>
     </head>
-    <body id="landing">
+    <body id="game-pad">
 		<header>
 			<nav>
 			</nav>
 		</header>
-		<!-- https://codepen.io/shammadahmed/pen/JOWEGW -->
-		<main>
-			<div class=" [ game-board ] | [ outer-border ] | [ surface ] ">
-				<div class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="1" data-state="true" data-value="X" data-row="A" data-col="1" data-coord="A1"
-						onclick="" onchange="">X</div>
-				<div class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="4" data-state="true" data-value="O" data-row="A" data-col="2" data-coord="A2"
-						onclick="" onchange="">O</div>
-				<div class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="7" data-state="true" data-value="O" data-row="A" data-col="3" data-coord="A3"
-						onclick="" onchange="">O</div>
-				<div class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="2" data-state="true" data-value="O" data-row="B" data-col="1" data-coord="B1"
-						onclick="" onchange="">O</div>
-				<div class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="5" data-state="true" data-value="X" data-row="B" data-col="2" data-coord="B2"
-						onclick="" onchange="">X</div>
-				<div class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="8" data-state="true" data-value="X" data-row="B" data-col="3" data-coord="B3"
-						onclick="" onchange="">X</div>
-				<div class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="3" data-state="true" data-value="O" data-row="C" data-col="1" data-coord="C1"
-						onclick="" onchange="">O</div>
-				<div class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="6" data-state="true" data-value="O" data-row="C" data-col="2" data-coord="C2"
-						onclick="" onchange="">O</div>
-				<div class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="9" data-state="true" data-value="X" data-row="C" data-col="3" data-coord="C3"
-						onclick="" onchange="">X</div>
+		<!--Hammad Ahmed (https://codepen.io/shammadahmed)  "Tic Tac Toe game layout with CSS Grid"
+					Last Accessed: 2023-03-03
+					URL: https://codepen.io/shammadahmed/pen/JOWEGW
+					Source Code used as a foundational starter code and ...
+					then adapeted for suit personal means.
+					Full Attribution to the original author/developer for initial ideation & design/UI pattern..
+					Adaptations as:
+					- Adding data-* attributes (-cell, -state, -value, -row, -col, -coord)
+					- Expanding of classnames as these were refactored
+		-->
+		<main id="tic-tac-toe">
+			<div id="board" class=" [ game-board ] | [ outer-border ] | [ surface ] ">
+				<div id="A1" class=" [ box ] | [ inner-border ]  | [ txt ] "
+						data-cell="1" data-state="true" data-value="X"
+						data-row="A" data-col="1" data-coord="A1"
+						onclick="">X</div>
+				<div id="A2" class=" [ box ] | [ inner-border ]  | [ txt ] "
+						data-cell="4" data-state="true" data-value="O"
+						data-row="A" data-col="2" data-coord="A2"
+						onclick="">O</div>
+				<div id="A3" class=" [ box ] | [ inner-border ]  | [ txt ] "
+						data-cell="7" data-state="true" data-value="O"
+						 data-row="A" data-col="3" data-coord="A3"
+						onclick="">O</div>
+				<div id="B1" class=" [ box ] | [ inner-border ]  | [ txt ] "
+						data-cell="2" data-state="true" data-value="O"
+						data-row="B" data-col="1" data-coord="B1"
+						onclick="">O</div>
+				<div id="B2" class=" [ box ] | [ inner-border ]  | [ txt ] "
+						data-cell="5" data-state="true" data-value="X"
+						data-row="B" data-col="2" data-coord="B2"
+						onclick="">X</div>
+				<div id="B3" class=" [ box ] | [ inner-border ]  | [ txt ] "
+						data-cell="8" data-state="true" data-value="X"
+						data-row="B" data-col="3" data-coord="B3"
+						onclick="">X</div>
+				<div id="C1" class=" [ box ] | [ inner-border ]  | [ txt ] "
+						data-cell="3" data-state="true" data-value="O"
+						data-row="C" data-col="1" data-coord="C1"
+						onclick="">O</div>
+				<div id="C2" class=" [ box ] | [ inner-border ]  | [ txt ] "
+						data-cell="6" data-state="true" data-value="O"
+						data-row="C" data-col="2" data-coord="C2"
+						onclick="">O</div>
+				<div id="C3" class=" [ box ] | [ inner-border ]  | [ txt ] "
+						data-cell="9" data-state="true" data-value="X"
+						data-row="C" data-col="3" data-coord="C3"
+						onclick="">X</div>
 			</div>
+			<h2 id="statusText">X</h2>
+			<button id="restart" type="button">Restart</button>
 			</main>
 		<footer>
-
 		</footer>
+		<!--See [DoneLog: Placeing JS above bodytag](_documentation\done.md#4.7)-->
+		<script type="text/JavaScript" src="lib/init.js" >
+			debbuger;
+		</script>
 	</body>
 </html>

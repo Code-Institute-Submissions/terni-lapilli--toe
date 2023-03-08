@@ -5,6 +5,14 @@ All notable performance accomplisgments, as aligned to the assessment criteria, 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and may align with to [Semantic Versioning](http://semver.org/).
 
+### Key
+
+- ☑️ Completed/Attained
+- ❓  Works In progress
+- ❌ Missed/Not Delivered
+
+> Create a anchor fragment to each donelog entry that changelog enter refers too. `[_] (#Ref)`
+
 ## JavaScript Essentials Assessment Criteria
 
 ### Learning
@@ -69,8 +77,8 @@ and may align with to [Semantic Versioning](http://semver.org/).
 ### To Do - Test a front-end web application through the development, implementation and deployment stages
 
 - [❓] [2.1](#2.1) ☑️❓❌**Write JavaScript code that passes through a linter (e.g. Jshint) with no significant issues.**
-- [ ] 2.2 ☑️❓❌ Write custom HTML code that passes through the official W3C validator with no issues.
-- [ ] 2.3 ☑️❓❌ Write custom CSS code that passes through the official (Jigsaw) validator with no issues
+- [ ] [2.2](#2.2) ☑️❓❌ Write custom HTML code that passes through the official W3C validator with no issues.
+- [ ] [2.3](#2.3) ☑️❓❌ Write custom CSS code that passes through the official (Jigsaw) validator with no issues
 - [ ] 2.4 ☑️❓❌ *Code all external links to open in a separate tab when clicked*
 - [ ] 2.5 ☑️❓❌ *Use CSS media queries across the application to*
   - [ ]  ☑️❓❌ ensure the layout changes appropriately and ..
@@ -100,23 +108,23 @@ and may align with to [Semantic Versioning](http://semver.org/).
 - [ ] 4.2 ☑️❓❌  Insert screenshots of the project features ...
   - [ ] ☑️❓❌ Give a brief description of what each feature does and ...
   - [ ] ☑️❓❌ Explain its value to the user.
-- [ ] 4.3 ☑️❓❌  Attribute all code from external sources to its original source
-  - [ ] ☑️❓❌ Via comments above the code and ...
-  - [ ] ☑️❓❌ For larger dependencies in the README.
-- [ ] 4.4 ☑️❓❌  Clearly separate and identify ...
-  - [ ] ☑️❓❌ Code written for the website and ...
-  - [ ] ☑️❓❌ Code from external sources (e.g. libraries or tutorials)
+- [x] [4.3](#4.3) ☑️  Attribute all code from external sources to its original source
+  - [x] ☑️ Via comments above the code and ...
+  - [x] ☑️ For larger dependencies in the README.
+- [x] [4.4](#4.4) ☑️❓❌  Clearly separate and identify ...
+  - [x] ☑️ Code written for the website and ...
+  - [x] ☑️ Code from external sources (e.g. libraries or tutorials)
 - [ ] 4.5 ☑️❓❌  Organise HTML, CSS and JavaScript code into well-defined and commented sections
-- [ ] 4.6 ☑️❓❌  Place CSS code in external files linked to the HTML page in the HEAD element.
-- [ ] 4.7 ☑️❓❌  Place JavaScript code in external files linked to the HTML page ***just above the closing body tag***.
-- [ ] 4.8 ☑️❓❌  Write code that meets at least minimum standards for readability
-  - [ ] ☑️❓❌ Consistent indentation ...
-  - [ ] ☑️❓❌ Blank lines only appear individually or, at most, in pairs
-- [ ] 4.9 ☑️❓❌  Name files ...
-  - [ ] ☑️❓❌ Consistently and descriptively,
-  - [ ] ☑️❓❌ Without spaces or capitalisation to allow for cross-platform compatibility.
-- [ ] 4.10 ☑️❓❌  Group files in directories by file type
-  - [ ] ☑️❓❌ e.g. an assets directory will contain all static files and may be organised into sub-directories such as CSS, images, etc.
+- [x] [4.6](#4.6) ☑️Place CSS code in external files linked to the HTML page in the HEAD element.
+- [x] [4.7](#4.7) ☑️  Place JavaScript code in external files linked to the HTML page ***just above the closing body tag***.
+- [x] [4.8](#4.8) ☑️❓  Write code that meets at least minimum standards for readability
+  - [x] ☑️❓ Consistent indentation ...
+  - [x] ☑️❓ Blank lines only appear individually or, at most, in pairs
+- [x] [4.9](#4.9) ☑️  Name files ...
+  - [x] ☑️ Consistently and descriptively,
+  - [x] ☑️ Without spaces or capitalisation to allow for cross-platform compatibility.
+- [x] [4.10](#4.10) ☑️  Group files in directories by file type
+  - [x] ☑️ e.g. an assets directory will contain all static files and may be organised into sub-directories such as CSS, images, etc.
 
 ### ToDo - Demonstrate and document the development process through a version control system such as GitHub
 

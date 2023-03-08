@@ -1,5 +1,7 @@
 *.log
+*.json
 .quokka
-/lib/snippets
+/lib/snippets/*
+/lib/snippets/
 .vscode
 .github
