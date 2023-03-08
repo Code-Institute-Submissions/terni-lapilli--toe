@@ -115,6 +115,44 @@ Each state can transition to other states based on certain conditions. The possi
         NewGame: Initialises the next/new game state.
 ```
 
+### User Journey
+
+> While the state machine of the game, as respresented by the state diagram. i.e. the game flow logic, above represents the phases of the game logic, the user journey focuses on the user experience during the game flow. They appear identical, just phrased in different ways and contextes.
+
+In this user journey:
+
+- The game starts with both players choosing their symbols.
+- Then, the turns alternate between players
+  - The turns alternate until one of them wins or the game ends in a tie.
+- At each turn, the player chooses a cell to place their symbol in  ...
+  - and the game checks for a win or a tie.
+- If there is a win, and there is a winner:
+  - The game ends and
+  - The winning player is declared.
+- If the board is full and there is no winner:
+  - The game ends in a tie.
+
+```mermaid
+
+graph TD
+    A[Start Game] --> B[Player 1 Chooses Symbol]
+    B --> C[Player 2 Chooses Symbol]
+    C --> D[Player 1 Turn]
+    D --> E[Player 1 Chooses Cell]
+    E --> F[Check for Win or Tie]
+    F --> G[Player 2 Turn]
+    G --> H[Player 2 Chooses Cell]
+    H --> I[Check for Win or Tie]
+    I --> D
+    F --> J[End Game: Player 1 Wins]
+    I --> K[End Game: Player 2 Wins]
+    F --> L[End Game: Tie]
+    J --P1-> M[Display Winning Message]
+    K --P2-> N[Display Winning Message]
+    L --> O[Display Tie Message]
+
+```
+
 #### *<ins>Future Enhancements</ins>*
 
 ### <ins>Accessibility</ins>

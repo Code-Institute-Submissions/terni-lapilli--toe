@@ -48,13 +48,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 # Changelog: Project Terni-Lapilli--Toe
 
-## Changelog: 2023.03.08 v.0.0.05.001
+## Changelog: 2023.03.08 v.0.0.05.001,002
 
 ### Added
 
 - Added: Outline of Game Design and Logic [001]
 - Added: State Diagram & Transitions Flows for Game Flow [001]
 - Added: Mermaid Text to Diagram Code [001]
+- Added: User Journey for Game & Mermaid [002]
 
 ## Changelog: 2023.03.01 v.0.0.04.001
 
