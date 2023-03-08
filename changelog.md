@@ -48,12 +48,34 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 # Changelog: Project Terni-Lapilli--Toe
 
-## Changelog: 2023.03.08 v.0.0.06.001 - OOO_Version
+## Changelog: 2023.03.08 v.0.0.06.001-002 - OOO_Version
 
 ### Added
 
-- Added: New Branch: OOO_Version
-- Added: Experimental Variation based on Object Orientated Clases: __GameLogic.js
+- Added: New Branch: OOO_Version (Experimental)
+- Added: Experimental Variation based on Object Orientated Clases
+- Added: __GameLogic.js [001]
+- Added: __Game.js for the Game Controller [002]
+- Added: __GamePieces.js for the Game Pieces / Symbols [002]
+- Added: __GameBoard.js for the Game Board [002]
+- Added: JSDoc comments for all clases and functions mostly complete.[002]
+
+Note this code is not tested, just write and not aserted a running, it is a model implementation. Fear and hestitation stops me at the momemnt. F.U.D.[002]
+Althought, classes code is more interdependent that is requires for a complete model implementation before testing as it is not hooked into the UI yet.[002]
+
+### ToDo
+
+- ToDo: Implement Getter/Setters for GamePieces.js for Players to choose, or randomise their game pieces at the staty of a match or a game. [002]
+- ToDo: Implement Randomiseation for the turn or the pieces, so to add varitey in who goes first. in Game.js or for GameLogic or  another SRO class. [002]
+- ToDo: Optionally use this interface to assign symbols to the players, by user input for customisation (as above, duplicate) GamePieces.js[002]
+- ToDo: For the terminal states of game (Win || Draw): Either reset the board or do more on the UI Game.js (ResetBoard) [002]
+- ToDo: Expand this logic for better user experience, MVP++, and improve the game flow/activity flow/ user journey in Game.js (ResetBoard) [002]
+- ToDo: Maybe Add: Optional Checking for Game Cell state changes for UI [002]
+-
+
+### Noted #
+
+- Noted: This version is being concurrently developed with a basic function only imperative, classic version on a separate branch. I am more familiar with OO than most on the course and will continue to develop both versions for this purpose of assignments.
 
 ### Added
 
