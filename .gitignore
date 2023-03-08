@@ -1,0 +1,5 @@
+*.log
+.quokka
+/lib/snippets
+.vscode
+.github

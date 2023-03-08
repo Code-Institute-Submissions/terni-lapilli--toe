@@ -30,7 +30,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 > **Template**
 >
-## Changelog: 2023.03.01 v.0.0.01.001
+## Changelog: 2023.03.01 v.0.0.04.001
 
 ### Added
 
@@ -46,7 +46,31 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.03 v.0.0.02.001-002
+# Changelog: Project Terni-Lapilli--Toe
+
+## Changelog: 2023.03.08 v.0.0.05.001
+
+### Added
+
+- Added: Outline of Game Design and Logic [001]
+- Added: State Diagram & Transitions Flows for Game Flow [001]
+- Added: Mermaid Text to Diagram Code [001]
+
+## Changelog: 2023.03.01 v.0.0.04.001
+
+### Added
+
+- Author's credit to HTML for Gameboard UI: [https://codepen.io/shammadahmed](https://codepen.io/shammadahmed) @ [CodePen: CodePen Home
+Tic-Tac-Toe game layout with CSS Grid Layout](https://codepen.io/shammadahmed/pen/JOWEGW) [001]
+
+### Changed
+
+- Changed: Adapted the source gameboard UI with enhancements (i.e. data-* attributes) for ease of state change and interactivity coding. [001]
+- Updated: Class names and used a class delimiter syntax from CUBE.fyi ( `[` ... `] | [` ... `]` ) [001]
+
+---
+
+## Changelog: 2023.03.03 v.0.0.02.001-003
 
 ### Added: [001-002]
 
@@ -70,19 +94,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 - Updated: Readme - Reliability > Testing & Vertification > Validation > JS [Donelog Item: 2.1](_documentation/done.md#2.1)
 
-### Removed
-
-### Fixed
-
-### ToDo
-
 ### Noted
 
-- Decided on using StandardJS.com as JS Linter, over JSLint and ESLint, though ESLint is employed by Standard.
+- Decided on using StandardJS.com as JS Linter, over JSLint and ESLint, though ESLint is employed by Standard.[002]
+- Validated HTML and have 0 Errors. [003] [2.2](_documentation/done.md#2.2)
+- Validated CSS and have 7 Errors for @layers. This is CSS is supported by all modern browsers, and is a Recommended Candidate for Cascade. [003] [2.3](_documentation/done.md#2.3)
 
 ---
-
-...
 
 ## Changelog: v.0.0.01.001 2023.03.01
 

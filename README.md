@@ -10,7 +10,7 @@ Three Grains and Toe is a
 
 ### <ins>Developer Goals</ins>
 <!--
-
+ Note: This developer learnt UML and software design by diagrams 20 years ago, under his Masters of Technology at RMIT (CS). This project is a showcase for some of these techniques under the Design section below.
 -->
 
 ### <ins>User | Audience Goals</ins>
@@ -23,17 +23,97 @@ Three Grains and Toe is a
 
 ### <ins>Requirements</ins>
 
+1. User Stories
+
 ### *<ins>Roadmap</ins>*
 
 ## **3. Design (UXD)**
 
-### <ins>Information Architecture & Hierarchy</ins>
+### <ins>Outline</ins>
 
-### <ins>Colour</ins>
+#### *HTML &amp; CSS*
 
-##### *<ins>Colour Palette<ins></ins>*
+The game board is created using HTML div elements styled with CSS.
 
-##### *<ins>Colour Contrast<ins>*
+- Each cell on the board is represented by a div element with a data attributes that stores its state, ident, and row, colium and coordinate position on the board.
+- The board is styled using CSS Grid to create a 3x3 grid of cells with inner and outer borders, that creates a faux padding around each cell.
+- Each cell as relative border radii.
+
+#### _JavaScript_
+
+1. The game logic is implemented using JavaScript [ classes | functions | modules | mix of either ] that represent:
+   - the game board, i.e. `GameBoard`.
+   - the game players, i.e. `UserMoves`.
+   - the game logic, i.e. `GameLogic`
+
+2. The `TicTacToe` [class | function | module | mix of either] game brings
+   - all of these components together and
+   - handles the user's moves.
+
+3. The `UserMoves` [class | function | module  | mix of either ] are:
+   - When the user clicks on a cell.
+   - The `handleMove` method is called with the position of  [ row &amp; column | coord | index ] of the cell.
+   - Checks if the cell is empty, and if so
+     - The `GameBoard` | Board Object is updated with the [ currentplayer's | user's] symbol.
+     - The board is [redrawn | updated | refreshed] ...
+4. The `GameLogic` [class | function | module  | mix of either ] is checked for
+   1. Either a winning move or a tie.
+      - If there is a winner, the game is ended. => _Terminal State_
+      - If the board is full, the game is ended. => _Terminal State_
+   2. Else, the next player is set as the current player. => _Next Move State_
+
+### <ins>State & Activity Flow</ins>
+
+#### _States of the Game_
+
+The state diagram for a game of Tic Tac Toe can be represented with the following states:
+
+- **Start**: The game has not yet started.
+- **Player 1 Turn**: Player 1's has a current turn.
+- **Player 2 Turn**: Player 2's has a current turn.
+- **Player 1 Wins**: Player 1 has won the game.
+- **Player 2 Wins**: Player 2 has won the game.
+- **Tie Game**: The game has ended in a tie.
+- **Restart** can be activated by any Player, and is an alias for **Start** to start a new game, and can be used a a following state from a terminal state
+
+#### _Transition States of the Game_
+
+Each state can transition to other states based on certain conditions. The possible transitions are:
+
+- **Start** can transition to **Player 1 Turn**.
+- **Player 1 Turn** can transition to **Player 2 Turn** or **Player 1 Wins** or **Tie Game**.
+- **Player 2 Turn** can transition to **Player 1 Turn** or **Player 2 Wins** or **Tie Game**.
+- **Player 1 Wins** and **Player 2 Wins** and **Tie Game** are terminal states and cannot transition to any other state in the current game.
+
+#### _State Diagram_
+
+> Mermaid's Text to Diagram
+
+```mermaid
+    stateDiagram-v2
+        Start --> Player1Turn
+        Player1Turn --> Player2Turn
+        Player1Turn --> Player1Wins
+        Player1Turn --> TieGame
+        Player2Turn --> Player1Turn
+        Player2Turn --> Player2Wins
+        Player2Turn --> TieGame
+        Player1Wins --> End
+        Player2Wins --> End
+        TieGame --> End
+        End --> Restart
+        Restart --> NewGame
+        NewGame --> Start
+        Start: The game has not yet started.
+        Player1Turn: It's Player 1's current turn.
+        Player2Turn: It's Player 2's current turn.
+        Player1Wins: Player 1 has won the game.
+        Player2Wins: Player 2 has won the game.
+        TieGame: The game has ended in a tie.
+        End: Current game terminal state.
+        Restart: Resets current game state,
+        NewGame: Initialises the next/new game state.
+```
 
 #### *<ins>Future Enhancements</ins>*
 
