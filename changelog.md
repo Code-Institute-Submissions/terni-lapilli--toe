@@ -48,7 +48,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 # Changelog: Project Terni-Lapilli--Toe
 
-## Changelog: 2023.03.08 v.0.0.05.001-003
+## Changelog: 2023.03.08 v.0.0.05.001-004
 
 ### Added
 
@@ -57,6 +57,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Added: Mermaid text to diagram (hereto mention as just `Mermaid`) Code [001]
 - Added: User Journey for Game & `Mermaid` [002]
 - Added: Activity Diagram for Game interactions, methods and `Mermaid` [003]
+
+### Notes
+
+- Noted: Pushed everything by accident in [003] instead of changelog and readme. WIP code commited. for Init.js, .gitignore, index.html, core.css and done.md. No reversion, but unplanned change in commit history. [004]
 
 ## Changelog: 2023.03.01 v.0.0.04.001
 
