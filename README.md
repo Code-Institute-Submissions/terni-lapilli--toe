@@ -147,8 +147,8 @@ graph TD
     F --> J[End Game: Player 1 Wins]
     I --> K[End Game: Player 2 Wins]
     F --> L[End Game: Tie]
-    J --P1-> M[Display Winning Message]
-    K --P2-> N[Display Winning Message]
+    J ---> M[Display Winning Message]
+    K ---> N[Display Winning Message]
     L --> O[Display Tie Message]
 
 ```
