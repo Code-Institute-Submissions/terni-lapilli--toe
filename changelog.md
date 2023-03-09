@@ -48,11 +48,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 # Changelog: Project Terni-Lapilli--Toe
 
-## Changelog: 2023.03.09 v.0.0.07.001 - OOO_Version
+## Changelog: 2023.03.09 v.0.0.07.001,002 - OOO_Version
+
+### Added
+
+- Added: Game.js: Added {boolean} gameState  for controling the terminal state of the game by a boolean flag. [001]
 
 ### Updated
 
-- Added: Game.js: Added {boolean} gameState  for controling the terminal state of the game by a boolean flag.
+- Changed: player symbols to pieces symbols in Logic constructor a closer binging to conceptual logic of the parameters. e.g Players move pieces on a board, players do not move on a board themselves [002]
 
 ## Changelog: 2023.03.08 v.0.0.06.001-002 - OOO_Version
 
