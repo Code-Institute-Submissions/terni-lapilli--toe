@@ -48,15 +48,33 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 # Changelog: Project Terni-Lapilli--Toe
 
-## Changelog: 2023.03.09 v.0.0.07.001,002 - OOO_Version
+## Changelog: 2023.03.09 v.0.1.01.001-003 - OOO_Version
+
+- Bump to Minor version 0.1.01:
 
 ### Added
 
-- Added: Game.js: Added {boolean} gameState  for controling the terminal state of the game by a boolean flag. [001]
+- Added: @__Game.js: Added {boolean} gameState  for controling the terminal state of the game by a boolean flag. [001]
+- Added: __ButtonListener.js for handling User interaction on the start button. [003]
+  - Added: Null / Undefined handling for NodeLists from DOM as  Object could be null
+  - Added: console.log for the button object
+  - Has single responsibility to manage the start state of the game when a user click on the button.
+- Added: __MoveListener.js for when the user clicks on the cell of the grid (class: .cell) [003]
+- Added: App.js: for initialisation of the JavaScript application [003]
+  - Called the Game Controller
+  - Calls the Two user interaction methods: Move/Click the cell, Game Start/Button click.
+- Added: App.js: String constants for the strings values to be passed to the class construtors for ease of future maintenance. [003]
 
 ### Updated
 
-- Changed: player symbols to pieces symbols in Logic constructor a closer binging to conceptual logic of the parameters. e.g Players move pieces on a board, players do not move on a board themselves [002]
+- Changed: player symbols to pieces symbols in Logic & Game constructor a closer binging to conceptual logic of the parameters. e.g Players move pieces on a board, players do not move on a board themselves [002]
+- Updated: home.html: changed the .box => .cell for consistency [003]
+- Updated: home.html: hanged script.js to App.js [003]
+
+### ToDo/ToFix
+
+- ToDo: Game object, by Quokka static/dyanmic analysis, states that X is undefined. [003]
+  - Tried to add the symbol strings of X and Y to the game object constructor to be passed down to the GamePieces constructor for assigning the X property.
 
 ## Changelog: 2023.03.08 v.0.0.06.001-002 - OOO_Version
 

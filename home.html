@@ -44,51 +44,51 @@
 					- Expanding of classnames as these were refactored
 		-->
 		<main id="tic-tac-toe">
-			<div id="board" class=" [ game-board ] | [ outer-border ] | [ surface ] ">
-				<div id="A1" class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="1" data-state="true" data-value="X"
+			<div id="board" class=" game-board  outer-border  surface ">
+				<div id="A1" class=" cell  inner-border  txt "
+						data-index="1" data-state="true" data-value="X"
 						data-row="A" data-col="1" data-coord="A1"
 						onclick="">X</div>
-				<div id="A2" class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="4" data-state="true" data-value="O"
+				<div id="A2" class=" cell  inner-border txt "
+						data-index="4" data-state="true" data-value="O"
 						data-row="A" data-col="2" data-coord="A2"
 						onclick="">O</div>
-				<div id="A3" class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="7" data-state="true" data-value="O"
+				<div id="A3" class=" cell  inner-border  txt "
+						data-index="7" data-state="true" data-value="O"
 						 data-row="A" data-col="3" data-coord="A3"
 						onclick="">O</div>
-				<div id="B1" class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="2" data-state="true" data-value="O"
+				<div id="B1" class=" cell  inner-border  txt "
+						data-index="2" data-state="true" data-value="O"
 						data-row="B" data-col="1" data-coord="B1"
 						onclick="">O</div>
-				<div id="B2" class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="5" data-state="true" data-value="X"
+				<div id="B2" class=" cell  inner-border  txt "
+						data-index="5" data-state="true" data-value="X"
 						data-row="B" data-col="2" data-coord="B2"
 						onclick="">X</div>
-				<div id="B3" class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="8" data-state="true" data-value="X"
+				<div id="B3" class=" cell  inner-border  txt "
+						data-index="8" data-state="true" data-value="X"
 						data-row="B" data-col="3" data-coord="B3"
 						onclick="">X</div>
-				<div id="C1" class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="3" data-state="true" data-value="O"
+				<div id="C1" class=" cell  inner-border  txt "
+						data-index="3" data-state="true" data-value="O"
 						data-row="C" data-col="1" data-coord="C1"
 						onclick="">O</div>
-				<div id="C2" class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="6" data-state="true" data-value="O"
+				<div id="C2" class=" cell  inner-border  txt "
+						data-index="6" data-state="true" data-value="O"
 						data-row="C" data-col="2" data-coord="C2"
 						onclick="">O</div>
-				<div id="C3" class=" [ box ] | [ inner-border ]  | [ txt ] "
-						data-cell="9" data-state="true" data-value="X"
+				<div id="C3" class=" cell  inner-border  txt "
+						data-index="9" data-state="true" data-value="X"
 						data-row="C" data-col="3" data-coord="C3"
 						onclick="">X</div>
 			</div>
 			<h2 id="statusText">X</h2>
-			<button id="restart" type="button">Restart</button>
+			<button id="start" type="button">Restart</button>
 			</main>
 		<footer>
 		</footer>
 		<!--See [DoneLog: Placeing JS above bodytag](_documentation\done.md#4.7)-->
-		<script type="text/JavaScript" src="lib/script.js" >
+		<script type="text/JavaScript" src="lib/App.js" >
 			debbuger;
 		</script>
 	</body>

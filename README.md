@@ -53,6 +53,8 @@ The game board is created using HTML div elements styled with CSS.
 
 #### _JavaScript_
 
+> This is all rought draft version of the text, labels and names are likely to change.
+
 1. The game logic is implemented using JavaScript [ classes | functions | modules | mix of either ] that represent:
    - the game board, i.e. `GameBoard`.
    - the game players, i.e. `UserMoves`.
