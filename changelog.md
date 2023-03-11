@@ -29,7 +29,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 # Changelog: Project Terni-Lapilli--Toe
 
 > **Template**
->
+
 ## Changelog: 2023.03.01 v.0.0.04.001
 
 ### Added
@@ -44,9 +44,45 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ### Noted
 
+### Decided
+
 ---
 
-# Changelog: Project Terni-Lapilli--Toe
+## Changelog: 2023.03.01 v.0.1.002.001
+
+### Added
+
+- Added: GameDebug class for debug the OOP model and instances. Version 0.1.0 [001]
+  - Efficieny for not having to write consol.log ... etc and uses more of the console api for logging, tracing, error and other diagnostic, by setting a message and a debug flag (1-9)
+    - 1: `console.lnfo`: Just a message to the console
+    - 2: `console.log`: Send message and any object to the console.
+    - 3: `console.trace`: Sends a message, a log and trace of the object to the console.
+    - 4: `console.debug` As for 3, but now includes sends the debug for the object to the console.
+    - 5: `console.warn` As dfor 3, now includes the warning for the object to the console
+    - 6: `console.error` As dfor 3, now includes the error for the object to the console, with an error string.
+    - 7: `console.dir & console.dirxml`: Sends the object to the console and any literanl content (dirxml) to the console. Useful for knowing which HTML/DOM object it is.
+    - 8: `console.trace`: Like, 3, just a simple trace output for the console.
+    - 9: Full Stack Traceing, Dir/DIRXML and Error to console.
+    - none: `console.clear`: Clears the console. Default if no flag or nothing between 1-9 is used.
+
+### Changed
+
+- Changed: Updated setter functions to assign the pieces array and currentsymbol.
+
+### Removed
+
+### Fixed
+
+- Fixed: Bugs in GamePieces where X was not defined. Was setting the this.X property to the wrong value/setter function.
+- Fixed: Setter functions that was causeing a potential infinite loop.
+
+### ToDo
+
+### Noted
+
+### Decided
+
+---
 
 ## Changelog: 2023.03.09 v.0.1.01.001-003 - OOO_Version
 
