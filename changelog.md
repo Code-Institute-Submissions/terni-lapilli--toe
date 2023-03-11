@@ -46,7 +46,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.01 v.0.1.002.001-003
+## Changelog: 2023.03.11 v.0.1.002.001-004
 
 ### Added
 
@@ -70,6 +70,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Added: `GameLogic`: Logging to the console for game state and current player. [003]
 - Added: JSDoc comments to all classes, using VSCode extension DocumentThis .[003]
 - Added: `GameLogic`: export statement at end of class module [003]
+- Added: ADLog.md, (Alias:  DecisionLog), for tracking key developer choices, architectural and design decisions [004]
 
 ### Changed
 
