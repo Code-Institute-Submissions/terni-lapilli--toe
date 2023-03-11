@@ -42,13 +42,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ### ToDo
 
-### Noted
-
 ### Decided
 
 ---
 
-## Changelog: 2023.03.01 v.0.1.002.001
+## Changelog: 2023.03.01 v.0.1.002.001-002
 
 ### Added
 
@@ -64,23 +62,26 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
     - 8: `console.trace`: Like, 3, just a simple trace output for the console.
     - 9: Full Stack Traceing, Dir/DIRXML and Error to console.
     - none: `console.clear`: Clears the console. Default if no flag or nothing between 1-9 is used.
+- Added: `GamePieces`: Defensive conditional to Getters/Setters, with debug and error statements added to if/when error happens. [002]
+- Added: `GamePieces`: `switchSymbol` function to the class. Maybe useful or maybe not. Potentiall refactor [002]
 
 ### Changed
 
-- Changed: Updated setter functions to assign the pieces array and currentsymbol.
+- Changed: Updated setter functions to assign the pieces array and current symbol. [002]
 
 ### Removed
 
 ### Fixed
 
-- Fixed: Bugs in GamePieces where X was not defined. Was setting the this.X property to the wrong value/setter function.
-- Fixed: Setter functions that was causeing a potential infinite loop.
+- Fixed: Bugs in GamePieces where X was not defined. Was setting the this.X property to the wrong value/setter function. [002]
+- Fixed: Setter functions that was causeing a potential infinite loop. [002]
 
 ### ToDo
 
-### Noted
-
 ### Decided
+
+- Decided: To add Debugging functionalities to take the FUD out of coding classes. Used liberally and will be refactored out before submission. #DeveloperUilitity. [001]
+- Decided: To add defensive coding strategies to all functions, testing. validating for if a @param in a function is not null or not undefined, else throwing and error and logging a debug message. [002]
 
 ---
 
