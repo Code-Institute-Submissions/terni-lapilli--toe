@@ -46,7 +46,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.01 v.0.1.002.001-002
+## Changelog: 2023.03.01 v.0.1.002.001-003
 
 ### Added
 
@@ -62,12 +62,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
     - 8: `console.trace`: Like, 3, just a simple trace output for the console.
     - 9: Full Stack Traceing, Dir/DIRXML and Error to console.
     - none: `console.clear`: Clears the console. Default if no flag or nothing between 1-9 is used.
+- Added: `GamePieces`: Debugging to the class. [002]
 - Added: `GamePieces`: Defensive conditional to Getters/Setters, with debug and error statements added to if/when error happens. [002]
 - Added: `GamePieces`: `switchSymbol` function to the class. Maybe useful or maybe not. Potentiall refactor [002]
+- Added: `GameLogic`: Defensive error checking, type checking in the class constructor [003]
+- Added: `GameLogic`: Debugging to the class. [003]
+- Added: `GameLogic`: Logging to the console for game state and current player. [003]
+- Added: JSDoc comments to all classes, using VSCode extension DocumentThis .[003]
 
 ### Changed
 
 - Changed: Updated setter functions to assign the pieces array and current symbol. [002]
+- Updated: JSDoc for Class, all methods, and static/readonly props in the class. [003]
+- Updated: isWin(), isDraw() for better method naming. [003]
+- Adjusted: Class internal params with an underscore before the parameter name to increase use of maintenance. [003]
 
 ### Removed
 
@@ -77,6 +85,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Fixed: Setter functions that was causeing a potential infinite loop. [002]
 
 ### ToDo
+
+- ToDo: Add a messaging class messages to the UI and User or  [003]
+- ToDo: Hoist above ToDo this as a move to a higher / calling Class [003]
 
 ### Decided
 
