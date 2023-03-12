@@ -46,6 +46,32 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.12 v.0.1.002.001
+
+### Added: Draft version of `StartListener.js`
+
+- Added: `StartListener.js`: Assigned @_evt to this.eventType
+- Added: `StartListener.js`: Try .. Catch for assigning Debbugger class for instance
+- Added: `StartListener.js`: Defensive programming for checking instance @params, throwing an error
+- Added: `StartListener.js`: Defensive programming for checking instanceOf for types of @params, throwing an error
+- Added: `StartListener.js`: Assign an event listener, as a private function (using Symbol as key to the function) with defensive programming.
+- Added: `StartListener.js`: Defensive programming for onStart function.
+
+### Changed
+
+- Updated: `onStart()` with error handling
+- Updated: `onStart()` with debugger
+
+### ToDo
+
+- ToDo: The defensive program is too complex and
+- ToDo: Is just a little hard to read. It is overly cautious.
+- ToDo: Refactor the code, and make it more readable.
+
+### Decided
+
+---
+
 ## Changelog: 2023.03.11 v.0.1.002.001-004
 
 ### Added
