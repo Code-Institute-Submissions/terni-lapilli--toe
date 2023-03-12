@@ -46,31 +46,40 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.12 v.0.1.002.001
+## Changelog: 2023.03.12 v.0.1.002.001-002
 
-### Added: Draft version of `StartListener.js`
+### Added: `StartListener.js`, `GameConfig.js`
 
-- Added: `StartListener.js`: Assigned @_evt to this.eventType
-- Added: `StartListener.js`: Try .. Catch for assigning Debbugger class for instance
-- Added: `StartListener.js`: Defensive programming for checking instance @params, throwing an error
-- Added: `StartListener.js`: Defensive programming for checking instanceOf for types of @params, throwing an error
-- Added: `StartListener.js`: Assign an event listener, as a private function (using Symbol as key to the function) with defensive programming.
-- Added: `StartListener.js`: Defensive programming for onStart function.
+- Added: `StartListener.js`: Assigned @_evt to this.eventType [001]
+- Added: `StartListener.js`: Try .. Catch for assigning Debbugger class for instance [001]
+- Added: `StartListener.js`: Defensive programming for checking instance @params, throwing an error [001]
+- Added: `StartListener.js`: Defensive programming for checking instanceOf for types of @params, throwing an error [001]
+- Added: `StartListener.js`: Assign an event listener, as a private function (using Symbol as key to the function) with defensive programming. [001]
+- Added: `StartListener.js`: Defensive programming for onStart function. [001]
+- Added: `GameConfig.js`: Created a configuration object to abstract the HTML strings into static strings
+  - Usage: To be used as `typeof === "string"` for DOM Nodelist queries and getHTMLElement methods. [002]
+  - Usage: Centralises the use of strings through outhe application
+  - ToDo: Pass the configuration object into the Game controller and other object.
+  - Risk: Increase of coupling (dependencies) and and cohession of the app design and architecture
+  - Why: Improves code maintainability, expansion, at expense of some additonal complexity for certain tiers of developer.
+- Added: `GameConfig.js`: `GameDebug.js` and a constructor to the GameConfig class. [002]
 
 ### Changed
 
-- Updated: `onStart()` with error handling
-- Updated: `onStart()` with debugger
+- Updated: `onStart()` with error handling [001]
+- Updated: `onStart()` with debugger [001]
+- Updated: `GameConfig.js`: Moved the export statement to end of file. [002]
 
 ### ToDo
 
-- ToDo: The defensive program is too complex and
-- ToDo: Is just a little hard to read. It is overly cautious.
-- ToDo: Refactor the code, and make it more readable.
+- ToDo: The defensive program is too complex and [001]
+- ToDo: Is just a little hard to read. It is overly cautious. [001]
+- ToDo: Refactor the code, and make it more readable. [001]
+- ToDo: Move export statement to end of all modules, and not in class declaration. [002]
 
 ### Decided
 
----
+- Decided: To add GameDebug support to all class modules. [002]
 
 ## Changelog: 2023.03.11 v.0.1.002.001-004
 
