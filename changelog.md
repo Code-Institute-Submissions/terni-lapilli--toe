@@ -46,9 +46,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.12 v.0.1.002.001-002
+## Changelog: 2023.03.12 v.0.1.002.001-003
 
-### Added: `StartListener.js`, `GameConfig.js`
+### Added: `StartListener.js`, `GameConfig.js`, `App.js`
 
 - Added: `StartListener.js`: Assigned @_evt to this.eventType [001]
 - Added: `StartListener.js`: Try .. Catch for assigning Debbugger class for instance [001]
@@ -63,12 +63,24 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
   - Risk: Increase of coupling (dependencies) and and cohession of the app design and architecture
   - Why: Improves code maintainability, expansion, at expense of some additonal complexity for certain tiers of developer.
 - Added: `GameConfig.js`: `GameDebug.js` and a constructor to the GameConfig class. [002]
+- Added: `App.js` Added a class of App to this module. [003]
+- Added: `App.js` `Init()` Added tests for instanceof check for Startlistners and MoveListners [003]
+- Added: `App.js` `errror(e), error(obj)` Overloaded error functions for application and object level errors. [003]
+- Added: `App.js` JSDoc comments added. [003]
+  Added `GameConfig.js` _DEV and_REPO strings for User actions when error are encountered [003]
 
 ### Changed
 
 - Updated: `onStart()` with error handling [001]
 - Updated: `onStart()` with debugger [001]
 - Updated: `GameConfig.js`: Moved the export statement to end of file. [002]
+- Updated: `GameConfig.js`: JSDoc comment, documentation, of GameConfig class. [002]
+- Changed: `App.js`: Changed the init() function, adding try .. catch defensive programming [003]
+-
+
+### Removed
+
+- Removed: `App.js` function of init for a functional style of initialising/running the application.
 
 ### ToDo
 
@@ -76,6 +88,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - ToDo: Is just a little hard to read. It is overly cautious. [001]
 - ToDo: Refactor the code, and make it more readable. [001]
 - ToDo: Move export statement to end of all modules, and not in class declaration. [002]
+- ToDo: Format all the JSDoc blocks with same as `GameConfig.js. App.js`. [002,003]
 
 ### Decided
 
