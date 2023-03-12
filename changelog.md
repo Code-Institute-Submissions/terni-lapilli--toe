@@ -58,7 +58,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Added: `StartListener.js`: Defensive programming for onStart function. [001]
 - Added: `GameConfig.js`: Created a configuration object to abstract the HTML strings into static strings
   - Usage: To be used as `typeof === "string"` for DOM Nodelist queries and getHTMLElement methods. [002]
-  - Usage: Centralises the use of strings through outhe application
+  - Usage: Centralises the use of strings through out the application
   - ToDo: Pass the configuration object into the Game controller and other object.
   - Risk: Increase of coupling (dependencies) and and cohession of the app design and architecture
   - Why: Improves code maintainability, expansion, at expense of some additonal complexity for certain tiers of developer.
