@@ -76,6 +76,11 @@ The game board is created using HTML div elements styled with CSS.
       - If the board is full, the game is ended. => _Terminal State_
    2. Else, the next player is set as the current player. => _Next Move State_
 
+5. The Game's UI User Inputs classes/objects are listed below. These clases are designed as listeners to User Input. They hold single responsibilities and perform the possible Null state of the NodeList from the DOM getSelectorQuery(). These are wrapper classes for DOM / UI / HTML manipulation functions.
+   - `ButtonListener` - Listens, and validates the HTML for null | undefined, for the user buutton interaction, with the click event. <!-- ButtonListener is too generic, change to StartListener-->
+
+   - `MoveListener` - Listens, and validates for null | undefined, initailises the board's cells, adding a click event to each cell.
+
 ### <ins>State & Activity Flow</ins>
 
 #### _States of the Game_
@@ -202,6 +207,111 @@ graph LR
     I --> K[Exit Game]
     H -- No --> C
     E -- No --> D
+
+```
+
+### <ins>Class Diagram</ìns>
+
+- [PDF Version](_documentation/TicTacToe-Class-Model.drawio.pdf)
+- [Image](_documentation/TicTacToe-Class-Model.drawio.png)
+
+```mermaid
+classDiagram
+    class App{
+        -GameDebug this.debug
+        -GameConfig this.config
+        -Game this.game
+        -NodeList.Node this.button
+        -NodeList this.move
+        -StartListener this.startListener
+        -MoveListener this.moveListener
+        +App constructor()
+        +void init()
+        +Error error(e)
+    }
+    class StartListener{
+        -NodeList.Node this.button
+        -Game this.game
+        -String this.eventType
+        -GameConfig this.config
+        -GameDebug this.debug
+        +StartListener constructor(_move, _game, _evt)
+        +void addListener()
+        +void onStart()
+        +void error(e, flag)
+    }
+    class MoveListener{
+        -NodeList this.move
+        -Game this.game
+        -String this.eventType
+        -onMove() this.onMove().bind(this)
+        -GameDebug this.debug
+        +MoveListener constructor(_move, _game, _evt)
+        +void setListener()
+        +void onMove(i)
+    }
+    class Game {
+        -GameBoard this.gameBoard
+        -GamePieces this.gamePieces(_X, _Y)
+        -GameLogic this.gameLogic(GameBoard this.gameBoard, GamePieces this.gamePieces)
+        -GameConfig this.gameConfig
+        -String this.Player1
+        -Player this.Player2
+        -Boolean this.gameStart
+        +Game constructor( _X, _Y, _config)
+        +void makeMove()
+        +void nextTurn()
+        +void resetBoard()
+    }
+    class GameLogic {
+        -GameBoard this.gameBoard
+        -GamePieces this.gamePieces(_X, _Y)
+        -GameLogic this.gameLogic(this.gameBoard, this.gamePieces)
+        -GameDebug this.debug
+        -String this.currentPlayer-Symbol
+        -Array[][] this.winningCombinations
+        -String this.BLANK
+        +GameLogic constructor(GameBoard _board_, GamePieces _pieces)
+        +Boolean isAWin()
+        +Boolean isAWinCombo()
+        +Boolean isADraw()
+    }
+    class GameBoard {
+        -String[] this.surface
+        -Boolean this.isValid
+        -Boolean this.isInValid
+        -GameDebug this.debug
+        +GameBoard constructor()
+        +Boolean isCellFree()
+        +Boolean isCellOccupied()
+    }
+    class GamePieces {
+        -String[] symbol
+        -String this.X
+        -String this.Y
+        -GameDebug this.debug
+        +GamePieces constructor(_X, _Y)
+        +String get X()
+        +String get X(piece)
+        +String get Y()
+        +String set X(piece)
+        +String switchPiece(piece)
+    }
+    class GameDebug {
+        -String this.ERR_HTML
+        -String this.ERR_NODE
+        +GameDebug constructor()
+        +StdErr _debug(obk, mgs, level)
+    }
+    class GameConfig {
+        -String this.BLANK
+        -String this._START
+        -String this._CELL
+        -String this._EVNT
+        -String this._DEV
+        -String this._REPO
+        +GameConfig constructor()
+    }
 
 ```
 
