@@ -215,6 +215,8 @@ graph LR
 - [PDF Version](_documentation/TicTacToe-Class-Model.drawio.pdf)
 - [Image](_documentation/TicTacToe-Class-Model.drawio.png)
 
+#### _App & UI Classes/Logic_
+
 ```mermaid
 classDiagram
     class App{
@@ -250,6 +252,12 @@ classDiagram
         +void setListener()
         +void onMove(i)
     }
+```
+
+#### _Game Classes/Logic_
+
+```mermaid
+classDiagram
     class Game {
         -GameBoard this.gameBoard
         -GamePieces this.gamePieces(_X, _Y)
@@ -297,6 +305,12 @@ classDiagram
         +String set X(piece)
         +String switchPiece(piece)
     }
+```
+
+#### _Ultility Classes_
+
+```mermaid
+classDiagram
     class GameDebug {
         -String this.ERR_HTML
         -String this.ERR_NODE
