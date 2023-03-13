@@ -22,7 +22,7 @@ and may align with to [Semantic Versioning](http://semver.org/).
 - [ ] LO3 ☑️❓❌Deploy a Front-End web application to a Cloud platform.
 - [ ] LO4 ☑️❓❌Maximise future maintainability through documentation, code structure and organisation.
 - [ ] LO5 ☑️❓❌Demonstrate and document the development process through a version control system such as GitHub.
-- [ ] LO6 ☑️❓❌LO6 Implement Front-End interactivity, using core JavaScript, JavaScript libraries or frameworks.
+- [ ] LO6 ☑️❓LO6 Implement Front-End interactivity, using core JavaScript, JavaScript libraries or frameworks.
 
 ---
 
@@ -44,31 +44,31 @@ and may align with to [Semantic Versioning](http://semver.org/).
 
 ### ToDo - Design an interactive Front-End web application using HTML and CSS and JavaScript based on the principles of user experience design, accessibility and responsivity
 
-- [ ] 1.1 ☑️❓❌ Design a web application that: ...
+- [ ] [1.1](#1.7) ☑️❓ Design a web application that: ...
   - [ ] ☑️❓❌ Meets accessibility guidelines, ...
   - [ ] ☑️❓❌ Follows the principles of UX design and ...
   - [ ] ☑️❓❌ Presents a structured layout and navigation model, and ...
   - [ ] ☑️❓❌ Meets its given purpose.
-- [ ] 1.2 Design a website that
+- [ ] [1.2](#1.2) Design a website that
   - [ ] ☑️❓❌meets accessibility guidelines
     - [ ] ☑️❓❌e.g. contrast between background and foreground colours to cater for the visually impaired.
   - [ ] ☑️❓❌Optionally, add alt text for non-text elements
-- [ ] 1.3 ☑️❓❌Design the organisation of information on the page
+- [ ] [1.3](#1.2) ☑️❓❌Design the organisation of information on the page
   - [ ] ☑️❓❌ following the principles of user experience design ...
     - [ ]  ☑️❓❌Headers are used to convey structure, ...
     - [ ]  ☑️❓❌In terms of priority, information is easy to find ..
       - [ ]  ☑️❓❌Due to being presented well.
       - [ ]  ☑️❓❌Due to being categorised well.
-- [ ] 1.4 ☑️❓❌Ensure that foreground information is never distracted by backgrounds.
-- [ ] 1.5 ☑️❓❌Include graphics that are consistent in style and colour.
-- [ ] 1.6 ☑️❓❌Design interactivity for a web application that ...
+- [ ] [1.4](#1.4) ☑️❓❌Ensure that foreground information is never distracted by backgrounds.
+- [ ] [1.5](#1.5) ☑️❓❌Include graphics that are consistent in style and colour.
+- [ ] [1.6](#1.6) ☑️❓❌Design interactivity for a web application that ...
   - [ ] ☑️❓❌Lets the user initiate and control actions ...
   - [ ] ☑️❓❌That gives feedback.
-- [ ] 1.7☑️❓❌Write custom JavaScript, HTML and CSS code to ...
+- [ ] [1.7](#1.7)☑️❓❌Write custom JavaScript, HTML and CSS code to ...
   - [ ] ☑️❓❌ Create a responsive front-end web application consisting of **one** ~~or more~~ HTML page~~s~~.
   - [ ] ☑️❓❌ with significant interactive functionality
-- [ ] 1.8 ☑️❓❌Write ***JavaScript code to produce relevant responses to user actions***
-- [ ] 1.9 ☑️❓❌Implement an interactive web application that
+- [ ] [1.8](#1.8) ☑️❓❌Write ***JavaScript code to produce relevant responses to user actions***
+- [ ] [1.9](#1.9)☑️❓❌Implement an interactive web application that
   - [ ]  ☑️❓❌ Incorporates images or graphics of usable resolution,
   - [ ]  ☑️❓❌ Legible, unobscured text.
   - [ ]  ☑️❓❌ Consistent styling.
@@ -77,35 +77,35 @@ and may align with to [Semantic Versioning](http://semver.org/).
 ### To Do - Test a front-end web application through the development, implementation and deployment stages
 
 - [❓] [2.1](#2.1) ☑️❓❌**Write JavaScript code that passes through a linter (e.g. Jshint) with no significant issues.**
-- [ ] [2.2](#2.2) ☑️❓❌ Write custom HTML code that passes through the official W3C validator with no issues.
-- [ ] [2.3](#2.3) ☑️❓❌ Write custom CSS code that passes through the official (Jigsaw) validator with no issues
-- [ ] 2.4 ☑️❓❌ *Code all external links to open in a separate tab when clicked*
-- [ ] 2.5 ☑️❓❌ *Use CSS media queries across the application to*
-  - [ ]  ☑️❓❌ ensure the layout changes appropriately and ..
-  - [ ]  ☑️❓❌ maintains the page's structural integrity across device screen sizes.
-- [ ] 2.6 ☑️❓❌ Use Semantic mark-up to structure HTML code
-- [ ] 2.7 ☑️❓❌ Present the finished website with
-  - [ ] ☑️❓❌ Clearly understandable site-specific content, rather than Lorem Ipsum placeholder text
-- [ ] 2.7 ☑️❓❌ If used, implement clear navigation to
-  - [ ] ☑️❓❌ allow users to find resources on the site intuitively.
+- [x] [2.2](#2.2) ☑️ Write custom HTML code that passes through the official W3C validator with no issues.
+- [x] [2.3](#2.3) ❓ Write custom CSS code that passes through the official (Jigsaw) validator with no issues => See ADLog.md for Code Decision on this.
+- [❓] [2.4](#2.4) ☑️❓*Code all external links to open in a separate tab when clicked* => Using no external links, unless for history of the game content.
+- [ ] [2.5](#2.5) ☑️❓ *Use CSS media queries across the application to*
+  - [ ]  ☑️❓ ensure the layout changes appropriately and ..
+  - [ ]  ☑️❓ maintains the page's structural integrity across device screen sizes.
+- [x] [2.6](#2.6) ☑️ Use Semantic mark-up to structure HTML code
+- [ ] [2.7](#2.7) ☑️❓ Present the finished website with
+  - [x] ☑️Clearly understandable site-specific content, ~~rather than Lorem Ipsum placeholder text~~
+- [ ] [2.8](#2.8) ☑️❓ If used, implement clear navigation to
+  - [ ] ☑️❓ allow users to find resources on the site intuitively.
 
 ### ToDo - Deploy a Front-End web application to a Cloud platform
 
-- [ ] 3.1 ☑️❓❌ Deploy a final version of the code
-  - [ ] ☑️❓❌to a cloud-based hosting platform (e.g. GitHub Pages) and
-  - [ ] ☑️❓❌test to ensure it matches the development version
-- [x] 3.2 ☑️ Use Git & GitHub for version control of an interactive web application up to deployment.
-- [ ] 3.3 ☑️❓❌ Remove commented out code ...
+- [x] [3.1](#3.1) ☑️❓Deploy a final version of the code
+  - [x] ☑️to a cloud-based hosting platform (e.g. GitHub Pages) and
+  - [ ] ☑️❓test to ensure it matches the development version
+- [x] [3.2](#3.1) ☑️ Use Git & GitHub for version control of an interactive web application up to deployment.
+- [ ] [3.3](#3.3) ☑️❓❌ Remove commented out code ...
   - [ ] ☑️❓❌ before pushing final changes to version control and deploying.
-- [ ] 3.4 ☑️❓❌ Ensure that there are no broken internal links
+- [x] [3.4](#) ☑️Ensure that there are no broken internal links => There are no internal links: See ADLog.md
 
 ### ToDo - Maximise future maintainability through documentation, code structure and organisation
 
-- [ ] 4.1 ☑️❓❌  Write a README.md file for the web application that
+- [x] [4.1](#4.1)   Write a README.md file for the web application that
   - [ ] ☑️❓❌ Explains its purpose ...
   - [ ] ☑️❓❌ The value that it provides to its users, and ...
-  - [ ] ☑️❓❌ The deployment procedure.
-- [ ] 4.2 ☑️❓❌  Insert screenshots of the project features ...
+  - [ ] ☑️❓ ❌The deployment procedure.
+- [ ] [4.2](#4.2) ☑️❓❌  Insert screenshots of the project features ...
   - [ ] ☑️❓❌ Give a brief description of what each feature does and ...
   - [ ] ☑️❓❌ Explain its value to the user.
 - [x] [4.3](#4.3) ☑️  Attribute all code from external sources to its original source
@@ -128,19 +128,24 @@ and may align with to [Semantic Versioning](http://semver.org/).
 
 ### ToDo - Demonstrate and document the development process through a version control system such as GitHub
 
-- [ ] 5.1 ☑️❓❌ Use consistent and effective markdown formatting that is ... when writing a README file:
-  - [ ] ☑️❓❌ Well-structured, ...
-  - [ ] ☑️❓❌ Easy to follow, and ...
-  - [ ] ☑️❓❌ Has few grammatical errors.
+- [ ] [5.1](#5.1) ☑️❓ Use consistent and effective markdown formatting that is ... when writing a README file:
+  - [ ] ☑️❓ Well-structured, ...
+  - [ ] ☑️❓ Easy to follow, and ...
+  - [ ] ☑️❓ Has few grammatical errors.
 
 ### ToDo - Implement Front-End interactivity, using core JavaScript, JavaScript libraries or frameworks
 
-- [ ] 6.1 ☑️❓❌ **Write JavaScript functions that**
-  - [ ] ☑️❓❌**correctly implement compound statements, such as if conditions and loops.**
-- [ ] 6.2 ☑️❓❌  **Write code that intelligently handles empty or invalid input data.**
-- [ ] 6.3 ☑️❓❌  **Implement appropriate working functionality for all project requirements.**
-- [ ] 6.4 ☑️❓❌ **Write code that does not generate internal errors on the page or in the console due to user actions.**
-- [ ] 6.5 ☑️❓❌ **Organise code and assets files in directories by file type.**
+- [x] Date: 203-03-11 6.1, 6.2, 6.5
+
+- [x] [6.1](#6.1) ☑️ **Write JavaScript functions that**
+  - [x] ☑️**correctly implement compound statements, such as if conditions and loops.**
+- [x] [6.2](#6.2) ☑️  **Write code that intelligently handles empty or invalid input data.**
+  - [x] ☑️ Use of defensive statements [Author]
+  - [x] ☑️ Use of debugging classes and funcions [Author]
+  - [x] ☑️ Use of try ... catch and error handling statements [Author]
+- [ ] [6.3](#6.3) ☑️❓❌  **Implement appropriate working functionality for all project requirements.**
+- [ ] [6.4](#6.4) ☑️❓❌ **Write code that does not generate internal errors on the page or in the console due to user actions.**
+- [x] [6.5](#6.5) ☑️ **Organise code and assets files in directories by file type.**
 
 ### InProgress
 

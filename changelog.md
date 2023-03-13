@@ -46,6 +46,49 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.13 v.0.1.03.001
+
+- Big Commit: Prior to Mentor Meeting. Rational and changelog
+
+### Added
+
+- Added: Class Diagrams (mermaid) to Readme
+- Added: Links to Draw.io Class Diagrams [PDF | PNG] - Directly from Draw.io (additional commits)
+
+### Changed
+
+- Updated: `Readme.md`
+- Changed: `GamePieces.board` => `GamePieces.surface`
+- Updated: JSDoc for `GamePieces`, `GameConfig`,`GameBoard`,`MoveListener`,`StartListener`,
+-
+
+### Fix
+
+- App.js has an uncaught synatx error.
+- Other paramers are being TypeError caught as undefined.
+
+### ToDo
+
+- Debugging:
+- Add a GameError class like the Debugger, or embedded in the debugger: Target: `StartListener`,`App`,`MoveListener`,`Game` only as this is where user inputs and params are passed/tightly coupled between classes for a) App init(), b) Events, i) new game buttons, ii) user moves
+
+### Done
+
+- Done: Web App Architecture/Classes is done for MVP
+- Done: UI
+- Not Done: Removing Application bugs.
+- Note Done: Proving design works, or not, with event listeners and signal down to GameLogic in a MVC-ish like pattern.
+
+### Decided Meeting Mentor: 1st Meeting
+
+- Defensive programming is catching errors not expected. Help needed.
+- Noted: Tried to have a running app for the 1st Mentor Meeting
+- Deciced: as Bugs were happening, decided to JSDoc and Class Diagram to describe the app.
+- Noted: Was heavily influenced in my design choices by my Java / C# background/training
+- Noted: Less familar with functional programming, am more impertiative, state based, like the DOM is.
+
+---
+
 ## Changelog: 2023.03.12 v.0.1.002.001-003
 
 ### Added: `StartListener.js`, `GameConfig.js`, `App.js`
@@ -75,12 +118,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Updated: `onStart()` with debugger [001]
 - Updated: `GameConfig.js`: Moved the export statement to end of file. [002]
 - Updated: `GameConfig.js`: JSDoc comment, documentation, of GameConfig class. [002]
-- Changed: `App.js`: Changed the init() function, adding try .. catch defensive programming [003]
+- Updated: `App.js`: Changed the init() function, adding try .. catch defensive programming [003]
 -
 
 ### Removed
 
-- Removed: `App.js` function of init for a functional style of initialising/running the application.
+- Removed: `App.js` function of init for a functional style of initialising/running the application. [003]
 
 ### ToDo
 
