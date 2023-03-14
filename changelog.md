@@ -46,20 +46,47 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.14 v.0.1.04.001
+## Changelog: 2023.03.14 v.0.1.04.002
+
+### Added
+
+- Added: `Check.md` Checklist for `Readme.md` [002]
 
 ### Changed
 
-### Removed
+- Updated: `Readme.md` - Improved formating  [002]
+- Updated: `Readme.md` - Developer Goals  [002]
+- Updated: `Readme.md` - Audience Goals  [002]
+- Updated: `Readme.md` - User Experience  [002]
+- Updated: `Readme.md` - Audience  [002]
+- Updated: `Readme.md` - Design  [002]
+- Updated: `Readme.md` - App Design [002]
+- Updated: `Readme.md` - State of the Game  [002]
+- Updated: `Readme.md` - Transition States of the Game  [002]
+- Updated: `Readme.md` - State Diagram  [002]
+- Updated: `Readme.md` - User Journey  [002]
+- Updated: `Readme.md` - Activity Diagram  [002]
+- Updated: `Readme.md` - Class Diagram  [002]
+- Updated: `Readme.md` - App & UI Logic  [002]
+- Updated: `Readme.md` - Game Logic  [002]
+- Updated: `Readme.md` - Utility Logic  [002]
+- Updated: `Readme.md` - IDE  [002]
+- Updated: `Readme.md` - Features  [002]
+- Updated: `Readme.md` - Testing & Verification  [002]
+- Updated: `Readme.md` - Static Analysis  [002]
+- Updated: `Readme.md` - Dynamic Analysis  [002]
+- Updated: `Readme.md` - Deploy - Features: App.js Features  [002]
+- Updated: `Readme.md` - Deploy - Features: Game.js Features  [002]
+- Updated: `Readme.md` - Deploy - Features: GameLogic.js  [002]Features
+- Updated: `Readme.md` - Future Enchancements: FE001  [002]
+- Updated: `Readme.md` - Future Enchancements: FE002  [002]
+- Updated: `Readme.md` - Future Enchancements: FE003  [002]
+- Updated: `Readme.md` - Future Enchancements: FE004  [002]
 
 ### Fixed
 
 - Fixed: `Game.js` this.gameBoard*s* => this.gameBoard typo. [001]
 - Fixed: `Game.js` is*A*Win(), is*A*Draw() function name/update typo. [001]
-
-### ToDo
-
-### Decided
 
 ---
 
