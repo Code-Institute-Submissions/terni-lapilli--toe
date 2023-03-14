@@ -46,6 +46,23 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.14 v.0.1.04.001
+
+### Changed
+
+### Removed
+
+### Fixed
+
+- Fixed: `Game.js` this.gameBoard*s* => this.gameBoard typo. [001]
+- Fixed: `Game.js` is*A*Win(), is*A*Draw() function name/update typo. [001]
+
+### ToDo
+
+### Decided
+
+---
+
 ## Changelog: 2023.03.13 v.0.1.03.001
 
 - Big Commit: Prior to Mentor Meeting. Rational and changelog
