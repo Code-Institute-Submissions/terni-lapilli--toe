@@ -46,11 +46,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.14 v.0.1.04.002
+## Changelog: 2023.03.14 v.0.1.04.003
 
 ### Added
 
 - Added: `Check.md` Checklist for `Readme.md` [002]
+- Added: Media elements from Mermaid and Draw.io [003]
 
 ### Changed
 
