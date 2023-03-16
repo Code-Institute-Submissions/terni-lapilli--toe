@@ -490,6 +490,7 @@ classDiagram
 
 - ES6 Javascript with Class statement
 - ES6 Import/Export Module statements
+  - https://www.infoworld.com/article/3619560/7-tools-transforming-javascript-development.html 
 - Single constructor classes
 - Single responsibility clases, with a few short functions
 - UI Helper Classes, for wrapping error handling of DOM events.
