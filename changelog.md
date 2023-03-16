@@ -46,7 +46,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.16 v.0.1.01.001
+## Changelog: 2023.03.16 v.0.1.01.001-003
 
 ### Added
 
@@ -78,10 +78,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
     > `Fields without initializers are initialized to undefined. Like properties, field names may be computed.` [MDN: Public Class Fields: Descripion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields#description)
     - Maybe overkill, or precautionary
 - Updated: `Game.js` JSDoc Docstrings for File, Class, Functions, Members => Documenation
-- Updated: `Game.js` makeMove with game state logic and local boolean flasg for `resetGame()` or `next Turn()`.
+- Updated: `Game.js` makeMove with game state logic and local boolean flag for `resetGame()` or `next Turn()`.
   - New @argument: start {boolean}
 - Updated: `Game.js` `resetGame` function signature
 - Updated: `Game.js` `resetGame`'s tasks for reseting/ reinstalising class members/props.
+- Updated: `GameDebug.js` Addtiton output ASCII and Temporal literals for clarity in console output, like file name
+- Changed: `GameDebug.js` Level 8: DirXML Warn Tracing: for Interactive descendants.
+- Updated: `GameDebug.js` Improved JSDoc as per Game.js and App.js documentation/
 
 ### Removed
 
@@ -94,6 +97,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - ToDo: `App.js`: new member: StartListener when research allows
 - ToDo: `App.js`: new member: MoveListener when research allows
 - Fixme: Module file names, if advisable, for all files and import statements
+- FixMe: Game.js is bottleneck: errors. Tested needed
 
 ### Decided
 
