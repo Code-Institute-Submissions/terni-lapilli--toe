@@ -83,13 +83,23 @@
 						onclick="">X</div>
 			</div>
 			<h2 id="statusText">X</h2>
-			<button id="start" type="button">Restart</button>
+			<button id="start" type="button">Start | Play</button>
 			</main>
 		<footer>
 		</footer>
 		<!--See [DoneLog: Placeing JS above bodytag](_documentation\done.md#4.7)-->
-		<script type="text/JavaScript" src="lib/App.js" >
-			debbuger;
+		<!-- <script type="module" src="/lib/main.js"> -->
+		<script type="module">
+			  /**
+				* Attatching this module as inline solves, by variance to the assessment criteria, for using external scripts.
+				* Prevents @throws Uncaught exception: SyntaxError
+				* Cause: import statement outside a module (at App.js:2:1)
+				* @requires App
+			  * @module module:/lib/App.js
+				*/
+				import { App } from "/lib/App.js"
+				const app = new App()
+				app.init()
 		</script>
 	</body>
 </html>

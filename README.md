@@ -1,17 +1,18 @@
-# ___**__Tic Tac & Toe__**___
+# **\_\*\***Tic Tac & Toe**\*\*\_**
 
-[![](_documentation/Screenshots/___"AmiResponsive: <https://ui.dev/amiresponsive?url=>")](https://ui.dev/amiresponsive?url=/ "Visit the Proof of Responsiveness: 3 Grains &amp; Toe")
+[![](\_documentation/Screenshots/\_\_\_"AmiResponsive: <https://ui.dev/amiresponsive?url=>")](https://ui.dev/amiresponsive?url=/ "Visit the Proof of Responsiveness: 3 Grains & Toe")
 
-> Visit: [3 Grains & Toe](https://ipoetdev.github.io/terni-lapilli--toe/ "3 Grains &amp; Toe: <https://ipoetdev.github.io/terni-lapilli--toe/> by Charles J Fowler (@ipoetdev)") | [https://ipoetdev.github.io/terni-lapilli--toe/](https://ipoetdev.github.io/terni-lapilli--toe/)
+> Visit: [3 Grains & Toe](https://ipoetdev.github.io/terni-lapilli--toe/ "3 Grains & Toe: <https://ipoetdev.github.io/terni-lapilli--toe/> by Charles J Fowler (@ipoetdev)") | [https://ipoetdev.github.io/terni-lapilli--toe/](https://ipoetdev.github.io/terni-lapilli--toe/)
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ---
+
 ---
 
-## __1. Project Goals__
+## **1. Project Goals**
 
-### *<ins>Game Rules</ins>*
+### _<ins>Game Rules</ins>_
 
 Here are the basic rules of Tic Tac Toe:
 
@@ -21,7 +22,8 @@ Here are the basic rules of Tic Tac Toe:
 - The first player to get three of their symbols (`x3`) in a row (horizontally, vertically, or diagonally) wins the game.
 - If all cells on the board are occupied and no player has won, the game is a tie.
 
-### *<ins>Developer Goals</ins>*
+### _<ins>Developer Goals</ins>_
+
 <!--
  Note: This developer learnt UML and software design by diagrams 20 years ago, under his Masters of Technology at RMIT (CS). This project is a showcase for some of these techniques under the Design section below.
 -->
@@ -40,7 +42,7 @@ Here are the basic rules of Tic Tac Toe:
   - Testible: OOP, Error Handling, Debug
 - To showcase via this README, not for brevity and concisness, but showcase of my prior art and knowledge of software development (OOP, Technical Documentation, Tooling); given a Masters of Technology [2002-04] qualification.
 
-### *<ins>User | Audience Goals</ins>*
+### _<ins>User | Audience Goals</ins>_
 
 - [DF001](#df001) Play the board game, Tic Tac Toe: Two Player, Two Pieces: (X & O)
   - As a user wants to play a TicTacToe game, so that users can have fun and pass the time.
@@ -50,15 +52,16 @@ Here are the basic rules of Tic Tac Toe:
 - [FE003](#fe003) User can save the game, at any time, and reload the game from the same saved state.
 - [FE004](#fe004) User can change the playing difficulty:
   - [DF002](#df002) Level 1) Simple: Human Click (MVP)
-  - [FE005](#fe005) Level 2) Medium: Computer  (Random)
+  - [FE005](#fe005) Level 2) Medium: Computer (Random)
   - [FE006](#fe006) Level 3) Hard:Computer AI (Minimax)
 
 ---
+
 ---
 
-## __2. Plan__
+## **2. Plan**
 
-### *<ins>User Experience</ins>*
+### _<ins>User Experience</ins>_
 
 1. _Game Objective_: Explains the objective of the game, which is to place three marks in a row, either horizontally, vertically or diagonally.
 2. _Game Play_: Instructuions Describe how the game is played. Each player takes turns placing their mark on an empty cell on the game board. The first player to get three marks in a row wins the game.
@@ -66,12 +69,12 @@ Here are the basic rules of Tic Tac Toe:
 4. _User Interaction_: Inform how the user interacts with the game, which is by tapping or clicking on an empty cell to place their mark.
 5. _Feedback_: Provide feedback to the user after each move, such as highlighting the winning row or reporting that the game has ended in a draw. Additionally, for invalid moves.
 6. _Error Feedback_: Provide feedback to the user when the app or the game logic throw an error from user input or from a runtime exception.
-      - Provide graceful degradation in error handling and/or ...
-      - Provide graceful degradation when logging console errors and/or ...
-      - Give the user an option to either i) choose or ii) contact the developer and log a bug.
+    - Provide graceful degradation in error handling and/or ...
+    - Provide graceful degradation when logging console errors and/or ...
+    - Give the user an option to either i) choose or ii) contact the developer and log a bug.
 7. _Restarting the Game_: Allow the user to easily restart the game, either by clicking a button. <!-- or shaking the device. -->
 
-#### *<ins>Audience(s)</ins>*
+#### _<ins>Audience(s)</ins>_
 
 - _Users_:
   - who love board games.
@@ -84,18 +87,19 @@ Here are the basic rules of Tic Tac Toe:
   - who are looking to learn JDDoc commenting for documentation.
   - who are looking to use text to diagram technologies, like mermaid and techniques like UML etc.
 
-#### *<ins>Requirements</ins>*
+#### _<ins>Requirements</ins>_
 
 1. User Stories
 
-#### *<ins>Roadmap</ins>*
+#### _<ins>Roadmap</ins>_
 
 ---
+
 ---
 
-## __3. Design (UXD)__
+## **3. Design (UXD)**
 
-### *<ins>App Design</ins>*
+### _<ins>App Design</ins>_
 
 #### _UI: HTML &amp; CSS_
 
@@ -106,8 +110,6 @@ The game board is created using HTML div elements styled with CSS.
 - Each cell as relative border radii.
 
 #### _App: JavaScript_
-
-
 
 > This is all rought draft version of the text, labels and names are likely to change.
 
@@ -123,7 +125,7 @@ The game board is created using HTML div elements styled with CSS.
     - Class: the _GameDebug_, a debugger, i.e `__GameDebug.js`: Centralised console debugging statements.
     - Class: the _GameConfig_, configuration string, i.e. `__GameConfig.js`: Reduce hard coded strings.
 
-### *<ins>Diagrams</ins>*
+### _<ins>Diagrams</ins>_
 
 #### _States of the Game_
 
@@ -131,7 +133,7 @@ The state diagram for a game of Tic Tac Toe can be represented with the followin
 
 - _Start_: The game has not yet started.
 <!-- - _Player 1 Choose_: Player 1's choose a symbol.
-- _Player 2 Choose_: Player 2's choose a symbol. -->
+-   _Player 2 Choose_: Player 2's choose a symbol. -->
 - _Player 1 Turn_: Player 1's has a current turn.
 - _Player 2 Turn_: Player 2's has a current turn.
 - _Player 1 Wins_: Player 1 has won the game.
@@ -188,7 +190,7 @@ In this user journey:
 - The game starts with both players choosing their symbols.
 - Then, the turns alternate between players
   - The turns alternate until one of them wins or the game ends in a tie.
-- At each turn, the player chooses a cell to place their symbol in  ...
+- At each turn, the player chooses a cell to place their symbol in ...
   - and the game checks for a win or a tie.
 - If there is a win, and there is a winner:
   - The game ends and
@@ -220,28 +222,40 @@ graph TD
 #### _Activity Diagrams_
 
 > Activity Diagrams are similar to both State and User journies, except they focus on the interations between the user and the game logic, i.e. the game methods/functions.
+> Commented Out activities are not yet implemented.
 
-- _Start Game_: The game is initialized and the game board check for playing readiness (on page load)
+- _Start App_: The app is initialized and the sets ip, for readiness/validity, of UI event listeners (on page load)
+- _Start Game_: The game is initialized and the game checks for playing readiness (on app initialisation), by i) setting up the game board, game logic, and game pieces:
   - _Initialise Game Board_: The game board is initialsed by clearing the board/setting up the board with empty cells.
-- _Set Current Player_: The game sets the current player to Player 1, and is always X symbol.
-  - _Current Player chooses Symbol_: _The game sets the current player to Player 1._
-  - _Wait for Move_: _The game waits for the current player to make a move._
-  - _Valid Move?_: _The game checks if the move made by the current player is valid._
-    - _No_: _If the move made by the current player is not valid, the game returns to waiting for a move from the current player._
-- _Handle Move_: If the move is valid, the game updates the game board with the current player's symbol and redraws the game board.
-- _Check for Win or Tie_: The game checks if there is a win or tie on the game board.
-- _End Game?_: The game checks if the game has ended due to a win or tie.
-  - _Display Result_: If the game has ended, the game displays the result to the user (either a win or tie) and prompts the user to either restart or exit the game.
-  - _Restart Game_: If the user chooses to restart the game, the game resets the game board and starts a new game.
+        <!-- - _Sets Game Storage_ : On init, the game board checks for a current game and/or stores the new game board state to a) local storage, and b) updates the board UI (HTML attributes) -->
+  - _Initialise Game Logic_: The game logic is checked and initialised .
+          <!-- - Set Game Difficulty: Game logic sets the game difficulty. -->
+        <!-- - _Initialise Game Pieces_: The game board is initialsed by reseting the game with new pieces. -->
+- _Set Current Player's Piece_: The game sets the current player to Player 1, and assigns the default piece, likely the X piece.
+  - _Current Player (is assigned | ~~chooses~~) Symbol_: The game sets the current player to Player 1 and the current piece to X.
+          <!-- - _Wait for Move_: _The game waits for the current player to make a move._ -->
+          <!-- - _Valid Move?_: _The game checks if the move made by the current player is valid._ -->
+            <!-- - _No_: _If the move made by the current player is not valid, the game returns to waiting for a move from the current player._ -->
+        <!-- - _Makes a Move_: If the move is valid, the game updates the game board with the current player's symbol and redraws the game board. -->
+- _Makes a Move_: Current player make a move, the game updates the game board with the current player's symbol, and calls nextTurn. In doing so:.
+- _Check for Win or Tie_: The game checks if there is a win or tie on the game board. If true, then ...
+  - _End Game?_: The game checks if the game has ended due to a win or tie.
+    - _Display Result_: If the game has ended, the game displays the result to the user (either a win or tie) and prompts the user to either restart or exit the game.
+        <!-- - _Prompt to Restart_: User is offered to start a new game, or end game.  -->
+  - _Restart Game_: If the user chooses to start a new game, then
+    - _Reset Game Board_ game resets the game board and starts a new game.
 - _Exit Game_: _If the user chooses to exit the game, the game ends._
 
 _Italics_: Optional Functionality: Methods for the game activities. _MVP++_
 
+> # Review this \*Remove when done
+
 ```mermaid
 
 graph LR
-    A[Start Game] --> B[Initialise Game Board]
-    B --> C[Set Current Player]
+    A[App Runs] --> b[Starts New Game]
+    b[Start New Game] --> B[Initialise Game Board]
+    B --> C[Set Current Piece \n to Current Player ]
     C --> D[Wait for Move]
     D --> E{Valid Move?}
     E -- Yes --> F[Handle Move]
@@ -380,48 +394,48 @@ classDiagram
 - [PNG | Live](https://mermaid.ink/img/pako:eNqFVGFv2jAQ_SsnV51AChmEUog1TaJkLZVAnUqqSVO-mMRQr8GObKctLf3vc-wAa6EafEh8fvfu3vPFrygVGUUYtVqthGumc4ohZmlM0lhQuCIrCsOigJFBwWUunhJukUtJinuIo4SD-Z2eAsNwp1nO9BpGOVEK29yR4Au2xOCepSSaCQ5KS8aX4HJZYw9s7uguMAznBkdSbYgVlV-jmymQOlSRLIR0G-N4Oqm5LhpV5IuBNqHV-r65KLU20BaczDSR2nTG0ocNjBp2OWFKU05lE_6jIqLz0olQIqf-LI5u7uLNLL79cXvbaMJ8bZwhS-i02rUkp8mm7SWNMLwri8G9KStF2QbnruETu_Igrfp1BAc9V_rurqGWmBgUfaR8B9jAsGEOzv-j9h0McXWWPuNMN5oYrs2TEU0ze8KGRN9TKMiSQi5IdtzRX4xn4kn5N7zCfF4EO_-A2Ro5e6HK0i-rgSI8A0W1grJwTUNed618x3NIawZiKh7pcfNWZgf8lOa5emfax-4rBjMN_sggt8MQNf7lrQt-CG7NjtjjodPqwIWjZyW4DW7gyg7HO3FXbs52pimQVBVm3Ng8p1ZhKriWIs-r72bno1jsP9UPvsE3U_Og1DFZglexw7bc2hFtxkRBAAWjKTVyL-3WT7uq0Zeu4ORIrhkZDyJJnjyIS8k3MLG7E7FkaZ09_jzb3kDmc9DUA1XKBUlNr2OLmAsiM8Ow_QMgD62oXBGWmRvttYokyLi1ognC5jUj8iFBCX8zOFJqMVvzFGEtS-qhsshMjYgRc7OtEF6QXJloQfhvIVZbEM2YFnLqbkx7cVoIwq_oGeHOWej3g2AQ9HqDbjfshR5aI3zu98Og2wnOBkH7POyd93pvHnqxpG0_HHT6QbsbGHw7DLv9t7_TH78u?type=png)
 - ![](https://mermaid.ink/img/pako:eNqFVGFv2jAQ_SsnV51AChmEUog1TaJkLZVAnUqqSVO-mMRQr8GObKctLf3vc-wAa6EafEh8fvfu3vPFrygVGUUYtVqthGumc4ohZmlM0lhQuCIrCsOigJFBwWUunhJukUtJinuIo4SD-Z2eAsNwp1nO9BpGOVEK29yR4Au2xOCepSSaCQ5KS8aX4HJZYw9s7uguMAznBkdSbYgVlV-jmymQOlSRLIR0G-N4Oqm5LhpV5IuBNqHV-r65KLU20BaczDSR2nTG0ocNjBp2OWFKU05lE_6jIqLz0olQIqf-LI5u7uLNLL79cXvbaMJ8bZwhS-i02rUkp8mm7SWNMLwri8G9KStF2QbnruETu_Igrfp1BAc9V_rurqGWmBgUfaR8B9jAsGEOzv-j9h0McXWWPuNMN5oYrs2TEU0ze8KGRN9TKMiSQi5IdtzRX4xn4kn5N7zCfF4EO_-A2Ro5e6HK0i-rgSI8A0W1grJwTUNed618x3NIawZiKh7pcfNWZgf8lOa5emfax-4rBjMN_sggt8MQNf7lrQt-CG7NjtjjodPqwIWjZyW4DW7gyg7HO3FXbs52pimQVBVm3Ng8p1ZhKriWIs-r72bno1jsP9UPvsE3U_Og1DFZglexw7bc2hFtxkRBAAWjKTVyL-3WT7uq0Zeu4ORIrhkZDyJJnjyIS8k3MLG7E7FkaZ09_jzb3kDmc9DUA1XKBUlNr2OLmAsiM8Ow_QMgD62oXBGWmRvttYokyLi1ognC5jUj8iFBCX8zOFJqMVvzFGEtS-qhsshMjYgRc7OtEF6QXJloQfhvIVZbEM2YFnLqbkx7cVoIwq_oGeHOWej3g2AQ9HqDbjfshR5aI3zu98Og2wnOBkH7POyd93pvHnqxpG0_HHT6QbsbGHw7DLv9t7_TH78u?type=png)
 
-### *<ins>Accessibility</ins>*
+### _<ins>Accessibility</ins>_
 
-### *<ins>Graphics</ins>*
+### _<ins>Graphics</ins>_
 
-## __4. BUILD__
+## **4. BUILD**
 
-### *<ins>Environment</ins>*
+### _<ins>Environment</ins>_
 
 <!-- > Did not use Gitpod, too high a friction and high context switching costs. -->
 
-1. *__Local__*
+1. _**Local**_
 
 - VSCode Insiders - Local
 - LivePreview
 - LiveServer: <http://127.0.0.1>
 
-2. *__Remote__*
+2. _**Remote**_
 
 - Gitpod
 - Github Pages from Github.com
 
-### *<ins>Browsers</ins>*
+### _<ins>Browsers</ins>_
 
 - Google Chrome (Dev) versions 112
 - Google Chrome versions 110
 - Firefox Developer Edition versions 111.0 beta
 - Polypane 13.0.3
 
-### *<ins>Browser Extensions</ins>*
+### _<ins>Browser Extensions</ins>_
 
 > <sub>[*] DevTools extensions</sub>
 
 - Webhint
 
-### *<ins>Languages<ins>*
+### _<ins>Languages<ins>_
 
 - HTML5
 - CSS3
 - Javascript (ES6, Core)
   - No backward compatibility accounted for.
 
-### *<ins>IDE</ins>*
+### _<ins>IDE</ins>_
 
 > Extensions: A brief summary of a few key ones.
 
@@ -435,7 +449,7 @@ classDiagram
 - Wallaby.js
 - Mermaid
 
-### *<ins>Repository<ins>*
+### _<ins>Repository<ins>_
 
 <!-- Packages used for developer quality of life and delivery purposes -->
 
@@ -455,7 +469,7 @@ classDiagram
 - Webhint
 - JSDoc
 
-### *<ins>Frameworks Used</ins>*
+### _<ins>Frameworks Used</ins>_
 
 > Programs, Packages and Libraries used in different workflows, and where code was generated and then adapted for use in the html or the CSS as a component.
 
@@ -472,7 +486,7 @@ classDiagram
 
 ## CODE
 
-### *<ins>Features</ins>*
+### _<ins>Features</ins>_
 
 - ES6 Javascript with Class statement
 - ES6 Import/Export Module statements
@@ -485,7 +499,7 @@ classDiagram
 
 ## RELIABILITY
 
-### *<ins>Testing & Verification</ins>*
+### _<ins>Testing & Verification</ins>_
 
 - Static Analysis like linting, code formaters, autocomplete/correction
 - IDE Run & Debugging: VSCode `F5` configured with the following tasks
@@ -496,29 +510,29 @@ classDiagram
     - Runtime values are updated and displayed in your IDE next to your code,
     - Runs your JavaScript and TypeScript tests immediately as you type, highlighting results in your IDE
 
-### *<ins>Validation</ins>*
+### _<ins>Validation</ins>_
 
 #### _HTML_
 
-|     Page     |  Checked   | Issues           . | Resolved | Passed |
-| :----------: | :--------: | :----------------: | :------: | :----: |
-|  Home.html   | March 28th |         -          |    -     |   -    |
-|  Folio.html  | March 28th |         -          |    -     |   -    |
-| Profile.html | March 28th |        - -         |    -     |        |
+|     Page     |  Checked   | Issues . | Resolved | Passed |
+| :----------: | :--------: | :------: | :------: | :----: |
+|  Home.html   | March 28th |    -     |    -     |   -    |
+|  Folio.html  | March 28th |    -     |    -     |   -    |
+| Profile.html | March 28th |   - -    |    -     |        |
 
 #### _CSS_
 
-| Page | Checked | Issues           . | Resolved | Passed | Impact | CanIUse |
-| :--: | :-----: | :----------------: | :------: | :----: | ------ | ------- |
-| Page | Checked | Issues           . | Resolved | Passed | Impact | CanIUse |
+| Page  | Checked | Issues . | Resolved | Passed | Impact | CanIUse |
+| :---: | :-----: | :------: | :------: | :----: | ------ | ------- |
+| Page  | Checked | Issues . | Resolved | Passed | Impact | CanIUse |
 
-### *<ins>Static Analysis</ins>*
+### _<ins>Static Analysis</ins>_
 
 #### _JavaScript Linters, Formaters_
 
 - EsLint
   - EsLint-config-standard
-  - EsLint Plugin * dependencies
+  - EsLint Plugin \* dependencies
 - StandardJS, using EsLint rules, as packaged.
 - SonarLint
 - VSCode's Javascript Langauge Server
@@ -529,22 +543,23 @@ classDiagram
 - `Quokka.js` [Pro]: Runtime values are updated and displayed in your IDE next to your code, as you type. This allows for dynamic errors, senior partner to checking the browser's console.
   - This enaable faster prototyping, learning and testing by being able to display and explore runtime values without having to modify the code.
   - Can breakpoint, limited and step into code with TimeMachine feature.
-- `Wallaby.js` is a developer  tool that runs your JavaScript and TypeScript tests immediately as you type, highlighting results in your IDE right next to your code.
+- `Wallaby.js` is a developer tool that runs your JavaScript and TypeScript tests immediately as you type, highlighting results in your IDE right next to your code.
   - From same developer as Quokka.js, some overlap in functionality.
 
 #### _Lighthouse_
 
-__Conditions__
+**Conditions**
 
-|     Page     |   Mode   | Device  | Performance | Accessibility | Best Practices | SEO |
-| :----------: | :------: | :-----: | :---------: | :-----------: | :------------: | :-: |
-|  Home.html   | Snapshot | Desktop |     / 4     |     / 13      |      / 4       | / 7 |
+|   Page    |   Mode   | Device  | Performance | Accessibility | Best Practices |  SEO  |
+| :-------: | :------: | :-----: | :---------: | :-----------: | :------------: | :---: |
+| Home.html | Snapshot | Desktop |     / 4     |     / 13      |      / 4       |  / 7  |
 
 ---
+
 ---
 
 # DEPLOY
->
+
 > Uss Gherkin syntax for code based Feature definitions
 
 ## Features
@@ -668,10 +683,10 @@ Scenario: Game is a draw
     # And the game state could be logged
 ```
 
-- ___Helper Classes___: `StartListener`, `MoveListener` not documented here, see [here]()  for full schema, as these are auxiliary to the core intent of the app.
-- ___Utility Classes___: `GameDebug`, `GameConfig` not documented here, see [here]() for full schema, as these are utilities to aid the running of the app.
+- **_Helper Classes_**: `StartListener`, `MoveListener` not documented here, see [here]() for full schema, as these are auxiliary to the core intent of the app.
+- **_Utility Classes_**: `GameDebug`, `GameConfig` not documented here, see [here]() for full schema, as these are utilities to aid the running of the app.
 
-### *<ins>Future Enhancements</ins>*
+### _<ins>Future Enhancements</ins>_
 
 #### _[FE001](#fe001)_
 
@@ -703,28 +718,28 @@ See the [Definition of Done-log](_documentation/done.md)
 
 ---
 
-## __Deployment__
+## **Deployment**
 
 - Github & GitHub User Account.
 - VSCode with Gitlens.
 - Github Pages with a domain of Github.io.
 
-### *<ins>Repository Service</ins>*
+### _<ins>Repository Service</ins>_
 
 - Github.com is the remote code repository service being used.
 - User account and profile is
-  >
-  > - `@iPoetDev`
-  >
+    >
+    > - `@iPoetDev`
+    >
 - The repository name is
-  >
-  > - `terni-lapiil--toei`
-  >
+    >
+    > - `terni-lapiil--toei`
+    >
 - The repository domain URI is
-  >
-  > - `https://github.com/iPoetDev/terni-lapilli--toe`
+    >
+    > - `https://github.com/iPoetDev/terni-lapilli--toe`
 
-### *<ins>Local Git Service / IDE</ins>*
+### _<ins>Local Git Service / IDE</ins>_
 
 - VSCode configured with Github account for Local development environment.
 - VSCode extension: Gitlens installed and enabled for local development and deployment.
@@ -734,22 +749,22 @@ See the [Definition of Done-log](_documentation/done.md)
 - Most adhered to [Semantic Versioning](http://semver.org/) approach.
   - Minor adjustment was to put a double digit index for each separate commit if several occurred on one day.
 
-### *<ins>Deployment Environment</ins>*
+### _<ins>Deployment Environment</ins>_
 
 - Github Pages via the inbuilt Github Actions workflows of:
-  1. Deploy a static web page off every commit.
-  2. Once the commit is built, then deploy the new website and pushes to hosted domain URI.
+    1. Deploy a static web page off every commit.
+    2. Once the commit is built, then deploy the new website and pushes to hosted domain URI.
 - Github.io is the hosted domain URI and service.
 - The final URI is
-  > `https://github.com/iPoetDev/the-folio`
+    > `https://github.com/iPoetDev/the-folio`
 
 ---
 
-## __LAUNCH__
+## **LAUNCH**
 
-### *<ins>Author Note</ins>*
+### _<ins>Author Note</ins>_
 
-### *<ins>Live Site</ins>*
+### _<ins>Live Site</ins>_
 
 In deploying to Github;s website hosting service, GitHub pages, the website was created. The steps to deploy are as follows:
 
@@ -767,9 +782,9 @@ Live link is: [https://ipoetdev.github.io/the-folio/](https://ipoetdev.github.io
 
 ---
 
-## __ASSESSMENT__
+## **ASSESSMENT**
 
-### *<ins>Credits</ins>*
+### _<ins>Credits</ins>_
 
 #### _Design_
 
@@ -781,10 +796,10 @@ Live link is: [https://ipoetdev.github.io/the-folio/](https://ipoetdev.github.io
 
 ---
 
-## __ACKNOWLEDGEMENT__
+## **ACKNOWLEDGEMENT**
 
-### *<ins>Guides</ins>*
+### _<ins>Guides</ins>_
 
-### *<ins>Video</ins>*
+### _<ins>Video</ins>_
 
 - Feross Aboukhadijeh (2018 Feb, 09): "Write Perfect Code With Standard And ESLint - JSConf.Asia 2018". Last Accessed: [https://www.youtube.com/watch?v=kuHfMw8j4xk](https://www.youtube.com/watch?v=kuHfMw8j4xk)

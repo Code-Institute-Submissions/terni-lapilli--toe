@@ -30,7 +30,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 > **Template**
 
-## Changelog: 2023.03.01 v.0.0.04.001
+## Changelog: 2023.03.1_v.0.1.0_.001
 
 ### Added
 
@@ -43,6 +43,44 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### ToDo
 
 ### Decided
+
+---
+
+## Changelog: 2023.03.16 v.0.1.01.001
+
+### Added
+
+- Added: `App.js`: new member: {GameDebug} debug
+- Added: `App.js`: new member: {GameConfig} config
+- Added: `App.js`: new member: {Game} game
+- Added: `App.js`: new member: {Element} button
+- Added: `App.js`: new member: {NodeList} move
+- Added: Quokka /*?+*/ for checking and testing live values.
+- Added: deugger statement for inspection. Liberally applied. @ToDo: remove once not needed.
+
+### Changed
+
+- Updated: `App.js`: _error() with a flag parameter and default in a switch case
+- Updated: `App.js` Try & Catch error handing for constructor.
+- Updated: `App.js` JSDoc Docstrings for File, Class, Functions, Members => Documenation
+- Updated: Home.html - minor.
+- Readme.md updates
+
+### Removed
+
+- Commented: Debugger for button, move. @Todo: Remove later.
+
+### Fixed
+
+### ToDo
+
+- ToDo: `App.js`: new member: StartListener when research allows
+- ToDo: `App.js`: new member: MoveListener when research allows
+- Fixme: Module file names, if advisable, for all files and import statements
+
+### Decided
+
+- Decided: Alter Classes to have props/public members by default.
 
 ---
 
