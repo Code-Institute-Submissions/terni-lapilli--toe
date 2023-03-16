@@ -5,3 +5,7 @@
 /lib/snippets/
 .vscode
 .github
+/docs
+jsdoc_help.md
+*.code-workspace
+TicTacToe-Class-Model.drawio

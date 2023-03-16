@@ -1,0 +1,37 @@
+- [ ] Summary
+  - [ ] AmIResponsive
+  - [x] Link to Site
+  - [x] Link to GitHub
+- [x] 1. Project Goals
+  - [x] Game Rules.
+  - [x] Developer Goals
+  - [x] User Goals
+- [ ] 2. Plan
+  - [x] User Experience
+  - [x] Audience
+  - [x] User Audience:
+    - [x] Users,
+    - [x] Junior Developers
+    - [ ] Todo: Code Reviewers
+  - [ ] Requirements
+- [x] 3. Design
+  - [x] 3.1 App Design
+    - [x] 3.1.1 _HTML & CSS_ Completed. 2023.03.08
+    - [x] 3.1.2 _JavaScript_ Completed. 2023.03.14
+  - [x] 3.2 _Diagrams_
+    - [x] 3.2.1 _States of the Game_
+    - [x] 3.2.2 _Transition States of the Game_
+    - [x] 3.2.3 _State Diagram_
+    - [x] 3.2.4 _User Journey_
+    - [x] 3.2.5 _Activity Diagram_
+    - [x] 3.2.6 _Class Diagram_
+      - [x] 3.2.6.1 _App & UI Classes/Logic_
+      - [x] 3.2.6.2 _Game Classes/Logic_
+      - [x] 3.2.6.3 _Utility Classes/Logic_
+    - [x] 3.2.7 _Code Flow_
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
