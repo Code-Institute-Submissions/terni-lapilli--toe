@@ -57,6 +57,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Added: `App.js`: new member: {NodeList} move
 - Added: Quokka /*?+*/ for checking and testing live values.
 - Added: deugger statement for inspection. Liberally applied. @ToDo: remove once not needed.
+- Added: `Game.js`: new member: Player 1 {String} to store X piece, and assigns it to GamePieces
+- Added: `Game.js`: new member: Player 2 {String} to store O piece, and assigns it to GamePieces
+- Added: `Game.js`: new member: gamePieces {GamePieces} to store both  X & Y from P1, P2 on instance of.
+- Added: `Game.js`: new member: gameBoard {GameBoard} for the start state of the board/game.
+- Added: `Game.js`: new member: gameLogic {GameLogic} for the engine of the game, win or draw state, and winning combinations.
+- Added: `Game.js`: new member: debug {GameDebug}
+- Added: `Game.js`: new member: isStart {Boolean}
+- Added: `Game.js`: new member: gameRunning {Boolean} @todo: Is this used/what is use case for?
 
 ### Changed
 
@@ -65,6 +73,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Updated: `App.js` JSDoc Docstrings for File, Class, Functions, Members => Documenation
 - Updated: Home.html - minor.
 - Readme.md updates
+- Updated: `Game.js` - Updated debugger statements, as undefined objects are causing errors in runtime.
+  - Is hoped that defineding the class members will fix the undefined behavior.
+    > `Fields without initializers are initialized to undefined. Like properties, field names may be computed.` [MDN: Public Class Fields: Descripion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields#description)
+    - Maybe overkill, or precautionary
+- Updated: `Game.js` JSDoc Docstrings for File, Class, Functions, Members => Documenation
+- Updated: `Game.js` makeMove with game state logic and local boolean flasg for `resetGame()` or `next Turn()`.
+  - New @argument: start {boolean}
+- Updated: `Game.js` `resetGame` function signature
+- Updated: `Game.js` `resetGame`'s tasks for reseting/ reinstalising class members/props.
 
 ### Removed
 
