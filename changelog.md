@@ -46,7 +46,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.16 v.0.1.01.001-003
+## Changelog: 2023.03.16 v.0.1.01.001-004
 
 ### Added
 
@@ -65,6 +65,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Added: `Game.js`: new member: debug {GameDebug}
 - Added: `Game.js`: new member: isStart {Boolean}
 - Added: `Game.js`: new member: gameRunning {Boolean} @todo: Is this used/what is use case for?
+
+### Added: 004
+
+- Added: GitHub Action: Super Linter for Code Quality. See [.github/linters/linters.md](.github/linters/linters.md)
 
 ### Changed
 

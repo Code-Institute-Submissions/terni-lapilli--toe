@@ -1,0 +1,94 @@
+default: true
+# Headings
+MD001: true
+MD003: true
+# Lists
+MD004: true #IDE
+MD005: true #IDE
+MD007: true #IDE
+MD008: true
+# Whitespace
+MD009: true #IDE
+MD010: true #IDE
+# LInk
+MD011: true #IDE
+# Blanks
+MD012: true #IDE
+# Lines
+MD013: true
+  code_blocks: true
+  code_block_Line_length: 120
+  headings: true
+  headings_line_length: 50
+  line_length: 120
+# MD014: true  #IDE
+# Output
+MD014: false  #IDE
+#Headings Format
+MD018: false #IDE
+MD019: false #IDE
+MD020: false #IDE
+MD021: true #IDE
+# Blanks
+MD022: true  #IDE
+  lines_above: 1
+  line_below: 1
+# Headings
+MD023: true  #IDE
+# Common for Changelogs, allowed for non-siblings-headlings
+MD024: true
+  allow_different_nesting: true
+  siblings_only: true
+MD025:
+  front_matter_title: ^\s*title\s*[:=]
+  level: 1
+# Punctuation
+MD026: true #IDE
+# Whitespace
+MD027: true #IDE
+MD028: true
+# List Style
+MD029: false
+MD030: true #IDE
+MD031: true #IDE
+MD032: true #IDE
+# HTML/URL
+MD033: true
+  allowed_elements: ins
+MD034: false #IDE
+MD035: true
+  style: consistent
+#Emphasis
+MD036: false
+# Spaces Inside
+MD037: true #IDE
+MD038: false #IDE
+MD039: false #IDE
+# Fences
+MD040: true
+# First Line
+MD041: true
+#Empty Links
+MD042: true
+# Defacto Heading Content
+MD043: false
+# Proper Names
+MD044: true #IDE
+#IMG Alt Text
+MD045: true
+# Fences
+MD046: true
+  style: consistent
+#EOF
+MD047: true #IDE
+# Style
+MD048: true
+  style: consistent
+MD049: false #IDE
+  style: consistent
+MD050: true #IDE
+  style: consistent
+#Links
+MD051: true
+MD052: false
+MD053: true  #IDE
