@@ -4,6 +4,7 @@
 
 > Visit: [3 Grains & Toe](https://ipoetdev.github.io/terni-lapilli--toe/ "3 Grains & Toe: <https://ipoetdev.github.io/terni-lapilli--toe/> by Charles J Fowler (@ipoetdev)") | [https://ipoetdev.github.io/terni-lapilli--toe/](https://ipoetdev.github.io/terni-lapilli--toe/)
 
+[![GitHub Super-Linter](https://github.com/ipoetdev/terni-lapilli--toe/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ---
@@ -319,20 +320,20 @@ classDiagram
 classDiagram
     class Game {
         -GameBoard this.gameBoard
-        -GamePieces this.gamePieces(_X, _Y)
+        -GamePieces this.gamePieces(_X, _O)
         -GameLogic this.gameLogic(GameBoard this.gameBoard, GamePieces this.gamePieces)
         -GameConfig this.gameConfig
         -String this.Player1
         -Player this.Player2
         -Boolean this.gameStart
-        +Game constructor( _X, _Y, _config)
+        +Game constructor( _X, _O, _config)
         +void makeMove()
         +void nextTurn()
         +void resetBoard()
     }
     class GameLogic {
         -GameBoard this.gameBoard
-        -GamePieces this.gamePieces(_X, _Y)
+        -GamePieces this.gamePieces(_X, _O)
         -GameLogic this.gameLogic(this.gameBoard, this.gamePieces)
         -GameDebug this.debug
         -String this.currentPlayer-Symbol
@@ -344,7 +345,7 @@ classDiagram
         +Boolean isADraw()
     }
     class GameBoard {
-        -String[] this.surface
+        -String[] this.grid
         -Boolean this.isValid
         -Boolean this.isInValid
         -GameDebug this.debug
@@ -357,7 +358,7 @@ classDiagram
         -String this.X
         -String this.Y
         -GameDebug this.debug
-        +GamePieces constructor(_X, _Y)
+        +GamePieces constructor(_X, _O)
         +String get X()
         +String get X(piece)
         +String get Y()
@@ -490,7 +491,7 @@ classDiagram
 
 - ES6 Javascript with Class statement
 - ES6 Import/Export Module statements
-  - https://www.infoworld.com/article/3619560/7-tools-transforming-javascript-development.html 
+  - <https://www.infoworld.com/article/3619560/7-tools-transforming-javascript-development.html>
 - Single constructor classes
 - Single responsibility clases, with a few short functions
 - UI Helper Classes, for wrapping error handling of DOM events.

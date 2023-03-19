@@ -48,17 +48,22 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.19v.0.1.05.001
+## Changelog: 2023.03.19v.0.1.05.003
 
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
 - Added: `GamePieces.js` debugger statements to the constructor.[001]
 - Added: `GameBoard.js` Class level props. [002]
+- Added: `gameLogger` function to Game & GameLogic. [003]
+  - ToDo: Add to App and GamePieces [003]
+- Added: `Game.js` evaluateParameters to improve input checking for game Players [003]
+- Added: `GameLogic,js` evaluateParameters and evaluateTypes for error handling and sanity checking.
+- Added `GameLogic.js` props to the class level, especially the Blank cell and winning combinations that does need to be renewed each run. [003]
 
 ### Changed
 
@@ -69,6 +74,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Updated: `GameDebug.js`'s debug function with default values. [001]
 - Updated: `GameBoard.js` updated this.grid, project wide. [002]
 - Updated: `GameBoard.js` updated JS DocStrings [002]
+- Updated: `GameLogic.js` updated JS DocStrings [003]
+- Updated: `Game.js` updated JS DocStrings [003]
 
 ### Removed
 
@@ -84,12 +91,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 - Noted: `GameBoard.js` No input/params santisation, no getters/setter [002]
 - Noted: `GameBoard.js` This class is an initialisation state machine /class [002]
-  - to determin the initial state of the game (as of 2023/03/19)
+  - to determin the initial state of the game (as of 2023/03/19) [003]
 
 ### Decided
 
 - Decided: Use new helper boolean functions to instead of long multiple conditional statements [001]
 - Decided: Use default values for function params were appropriate. [001]
+- Decided: To tidy up all constructors as applicable. [002,003]
 
 ---
 
