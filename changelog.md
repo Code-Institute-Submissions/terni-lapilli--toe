@@ -48,12 +48,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.19v.0.1.05.004,005,006
+## Changelog: 2023.03.19v.0.1.05.007
 
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
@@ -71,6 +71,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
   - Initialised and defined: startListener and moveListeners
     - Intent to not to have undefined behaviours for the whole app.
 - Added: `Game.js` New Functions for inline conditionals [005]
+- Added: `StartListener,js` Class props, and default values [007]
+- Added: `StartListener,js` evaluateParameters and evaluateEventTypes for error handling and sanity checking. [007]
 
 ### Changed
 
@@ -91,6 +93,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
   - `isGameOver` to check the terminal state of the game. [005]
   - `makeMove` modified to employ these new methods. [005]
 - Updated: `GameLogic.js` on the tyep checking of the parameters [006]
+- Updated: `StartListener.js` constructor [007]
+- Updated: `StartListener.js` `error` signature and parameters, now onError [007]
+- Updated: `StartListener.js` `onError` now refactored for better readability.. [007]
+- Updated: `StartListener.js` `addListener` refactored [007]
+- Updated: `StartListener.js` `addListener` refactored [007]
+- Updated: `StartListener.js` `onStart` refactored [007]
+- Updated: `StartListener.js` JSDoc DocStrings for file, class, functions, props [007]
+- Updated: `Game.js` whitespace [007]
 
 ### Removed
 
