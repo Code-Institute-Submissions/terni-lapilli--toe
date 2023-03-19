@@ -48,12 +48,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.19v.0.1.05.003
+## Changelog: 2023.03.19v.0.1.05.004,005,006
 
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-  - - to improve readbility and santisation (truthy || falsey) for getters/setters
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
@@ -64,6 +64,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Added: `Game.js` evaluateParameters to improve input checking for game Players [003]
 - Added: `GameLogic,js` evaluateParameters and evaluateTypes for error handling and sanity checking.
 - Added `GameLogic.js` props to the class level, especially the Blank cell and winning combinations that does need to be renewed each run. [003]
+- Added: `App.js` Class level props. [004]
+  - Initialised and defined: newGame
+  - Initialised and defined: startButton
+  - Initialised and defined: userMoves
+  - Initialised and defined: startListener and moveListeners
+    - Intent to not to have undefined behaviours for the whole app.
+- Added: `Game.js` New Functions for inline conditionals [005]
 
 ### Changed
 
@@ -76,10 +83,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Updated: `GameBoard.js` updated JS DocStrings [002]
 - Updated: `GameLogic.js` updated JS DocStrings [003]
 - Updated: `Game.js` updated JS DocStrings [003]
+- Updated: `GameLogic.js` minor modifications not tracked [004]
+- Updated: `App.js` Reactoring the constructor to be more streamlined [004]
+- Updared: `Game.js` Refactored makeMove into 4 functions [005]
+  - `checkMove` to see if the move is valid and game not over. [005]
+  - `updateGrid` to update the board's grid with the current Piece
+  - `isGameOver` to check the terminal state of the game. [005]
+  - `makeMove` modified to employ these new methods. [005]
+- Updated: `GameLogic.js` on the tyep checking of the parameters [006]
 
 ### Removed
 
 ### Fixed
+
+- Fixed: Improved readability, extensibility and maintainability. [005]
 
 ### ToDo
 
@@ -92,6 +109,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Noted: `GameBoard.js` No input/params santisation, no getters/setter [002]
 - Noted: `GameBoard.js` This class is an initialisation state machine /class [002]
   - to determin the initial state of the game (as of 2023/03/19) [003]
+  - New refactorings allow for new functionality to be added in the future for Game.js [005]
 
 ### Decided
 
