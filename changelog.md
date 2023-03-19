@@ -30,11 +30,42 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 > **Template**
 
+---
+
 ## Changelog: 2023.03.1_v.0.1.0_.001
 
 ### Added
 
 ### Changed
+
+### Removed
+
+### Fixed
+
+### ToDo
+
+### Decided
+
+---
+
+## Changelog: 2023.03.19v.0.1.05.001
+
+### Added
+
+- Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+- Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
+  - to santise check for {type} strings in the constructor, @returns array for game pieces storage
+- Added: `GamePieces,js`: New Doctsrings for each function. [001]
+- Added: `GamePieces.js` debugger statements to the constructor.
+
+### Changed
+
+- Updated: `GamePieces.js` DocStrings as per `Game.js`, `App.js` [001]
+- Updated: `GamePieces.js` functions with local string message consts for errros and output [001]
+- Updated: Inline comments for functions as needed. [001]
+- Updated: GameDebug functions with File name as 4th parameter [001]
+- Updated: `GameDebug.js`'s debug function with default values. [001]
 
 ### Removed
 
