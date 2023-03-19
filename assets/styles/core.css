@@ -44,7 +44,7 @@ body * {
 		--edge-color: #2c3e50;
 	}
 
-	.surface {
+	.grid {
 		background-color: var(--surface-color);
 		color: var(--text-color);
 	}

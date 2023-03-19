@@ -57,7 +57,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
-- Added: `GamePieces.js` debugger statements to the constructor.
+- Added: `GamePieces.js` debugger statements to the constructor.[001]
+- Added: `GameBoard.js` Class level props. [002]
 
 ### Changed
 
@@ -66,6 +67,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Updated: Inline comments for functions as needed. [001]
 - Updated: GameDebug functions with File name as 4th parameter [001]
 - Updated: `GameDebug.js`'s debug function with default values. [001]
+- Updated: `GameBoard.js` updated this.grid, project wide. [002]
+- Updated: `GameBoard.js` updated JS DocStrings [002]
 
 ### Removed
 
@@ -73,7 +76,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ### ToDo
 
+- ToDo: Remove is*Cell() functions if no use case is found. [002]
+- ToPlan: Employ GameBoard as a future solution to local storage and writing to the UI state of data-state and data-value attributes. [002]
+- ToDo: Remove debugger statement & Quokka LiveValue statement [002]
+
+### Noted
+
+- Noted: `GameBoard.js` No input/params santisation, no getters/setter [002]
+- Noted: `GameBoard.js` This class is an initialisation state machine /class [002]
+  - to determin the initial state of the game (as of 2023/03/19)
+
 ### Decided
+
+- Decided: Use new helper boolean functions to instead of long multiple conditional statements [001]
+- Decided: Use default values for function params were appropriate. [001]
 
 ---
 
@@ -197,7 +213,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Changed
 
 - Updated: `Readme.md`
-- Changed: `GamePieces.board` => `GamePieces.surface`
+- Changed: `GamePieces.board` => `GamePieces.grid`
 - Updated: JSDoc for `GamePieces`, `GameConfig`,`GameBoard`,`MoveListener`,`StartListener`,
 -
 
