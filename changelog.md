@@ -48,7 +48,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.20 v.0.1.06.002
+## Changelog: 2023.03.20 v.0.1.06.003
 
 ### Added
 
@@ -86,6 +86,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
   - Used to check literal type for symbol.
   - Option to switch types in the future
 - Updated: Refactored `evaluatedPieces` with optional parameters/default values [002]
+
+### Removed
+
+- Removed: `GameDebug` debugger statement
 
 ### Refactored
 
@@ -126,7 +130,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-  - - to improve readbility and santisation (truthy || falsey) for getters/setters
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
