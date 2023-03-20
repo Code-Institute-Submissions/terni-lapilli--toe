@@ -48,12 +48,73 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.20 v.0.1.06.001
+
+### Added
+
+- Added: `Readme.md` Comment Style section. [001]
+- Added: MoveListeners Class props, including a new one for ErrorHandling: fileName property [001]
+- Added evaluateParameter, evaluateEventType funcctions for constructor parameters santity checks [001]
+- Added@ JSDoc annoations of two types [001]
+  - @todo CHECKS: Code subject to change
+  - @todo FREEZE: Freeze changes to v0.3.0 on 2023/03/20
+
+### Changed
+
+- Updated: Code Formatting for `App`, `StartListener` and `MoveListener` [001]
+- Updated: `MoveListener` JSDoc DocStrings as per StartListener etc [001]
+- Updated: `evaluateParameter`, `evaluateEventType` locname default to template literal, this.fileName,  [001]
+  - Updated: `MoveListener`, `StartListener`, `Game`
+  - Updated for more abstraction
+  - Updated to remove repeating hardcoded string.
+- Updated: Reactored `constructor`  [001]
+  - uses the new evaluation functions, and JSDoc DocStrings.
+- Updated: all functions with a default value template literal with filename and function name appended to template. [001]
+  - StartListener, and MoveListener impacted [001]
+    - Purpose, to Assist with debugging and console logging when functions get called.
+  - Optional parameter, edit/remove before submission.
+  - Use only when using with interface/UI classes on event handling.
+
+### Refactored
+
+- Refactored all classes since 2023/03/14 to 2023/03/03 [001]
+  - *Default class field values* by defining a default, and mitigating undefined behavior
+  - *Refactored all constructore* to have less conditionals and more call internal hlper functions. => Improve readbility, abstraction, code separation and sanity checking
+  - *Added Error Handlers*to below, to handle try catch errors and error types. Could be moved into a separate Error Class, not now.
+  - *Refactored all JSDoc strings*
+  - *Default optional function values* for internal function lets, into the function signature for customing console output and error handling
+- *Consquence: as of 2023/03/23*
+  - Code is not running or tested.
+  - UI for reest of the game is to be developed
+  - Additioanl functionality is parked.
+  - Focus on code, testing and documentation quality is has been the bottleneck/priority for the core functionality.
+
+### ToDo
+
+- ToDo: Test the following code: [001]
+  - TEST: App entry point on page load
+  - TEST: App UI listeners
+  - TEST: Game controller
+  - TEST: Game Logic
+  - TEST: Game Pieces and Game Board data storage
+- ToDo: Update following with same optional function signatures for console and error handling.
+  - `App`, `Game`, `GameLogic`, `GamePieces`, `GameBoard`
+  - DONE: `StartListener`, `MoveListener`
+
+### Decided
+
+- Decided: To add optional default to most functions where console logging [001]
+- Decided: To use default values in class  functions [001]
+  - to improve readability and internal variable assignment for hard coded values. #DesignPattern
+
+---
+
 ## Changelog: 2023.03.19v.0.1.05.007
 
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-  - - to improve readbility and santisation (truthy || falsey) for getters/setters
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]

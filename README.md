@@ -499,6 +499,36 @@ classDiagram
 - `Try ... Catch` blocks for error handling.
 - Attempted low coupling, and high cohession, but there are a few high coupling dependencys due to state of the game and passing objects inside objects from app/UI to game logic tier.
 
+### _<ins>Comment Style</ins>_
+
+> Uses JSDoc docstrings for code comment
+> Uses In `//` for single line comments
+
+- This project is an evaluation level project for assessment and code review purposes, as such high level decision was made, with trade offs, for the following reasons:
+
+  1. Be explicit as possible, when using the JSDoc strings below,
+  2. Be precise as possible
+  3. Be declarative as possible
+  4. Be easy to follow, thought the LoC count rises for each file as comments are equal or comparable LoC as to effective code.
+  5. This has the consequences of reducing readability over all
+  6. This has the consequneces of increasing the maintenance budget
+  7. This has the consequences of of increasing file size and download times, particularly on P75 user devices and or slower networks.
+  8. This has the benefit of improving comprehension of code effectiveness and execution for code review purposes.
+
+- This code is not for production, but for evaluation only, as in production level code, the commenting & docstrings would be:
+
+  1. Be less explict, descriptive, more terse.
+  2. Just enough to decribe the purpose of the code statement or code block.
+  3. Allow for code to be self commenting
+  4. Efficient for code file size
+  5. Efficient for performance purposes
+  6. Used in time for using automated API/Documenting solutuons
+  7. Minifified or refactord/edited downwards.
+  8. In production, there would be a common house style that all engineers would be able requred to follow.
+
+- It is the author's style to be expansive during development.
+- He would strip out code comments in a CI/CD just before pushing the code into production , but after QA and the technical writers have captured the code comments.
+
 ## RELIABILITY
 
 ### _<ins>Testing & Verification</ins>_
