@@ -48,7 +48,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.20 v.0.1.06.001
+## Changelog: 2023.03.20 v.0.1.06.002
 
 ### Added
 
@@ -58,6 +58,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Added@ JSDoc annoations of two types [001]
   - @todo CHECKS: Code subject to change
   - @todo FREEZE: Freeze changes to v0.3.0 on 2023/03/20
+- Added: fileName @prop for File and Method location names [002]
 
 ### Changed
 
@@ -74,6 +75,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
     - Purpose, to Assist with debugging and console logging when functions get called.
   - Optional parameter, edit/remove before submission.
   - Use only when using with interface/UI classes on event handling.
+- Updated: `GamePieces.js` deBug prop name [002]
+- Updated: `GamePieces.js` JSDoc DocStrings [002]
+- Updated: `evaluatedPieces` in constructor for optional parameters[002]
+- Updated: Refactored: `getX`, `getO`, `setX`, `setO` [002]
+  - removed get/set statement, refactored with try .. catch
+  - Browser was complaining that orginal function signatures were not a function.
+- Updated: Refactored `switchPieces` with optional parameters/default values [002]
+- Updated: Refactored `checkAPiece` with optional parameters/default [002]
+  - Used to check literal type for symbol.
+  - Option to switch types in the future
+- Updated: Refactored `evaluatedPieces` with optional parameters/default values [002]
 
 ### Refactored
 
@@ -114,7 +126,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
