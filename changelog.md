@@ -48,7 +48,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.20 v.0.1.06.004
+## Changelog: 2023.03.20 v.0.1.06.005
 
 ### Added
 
@@ -88,6 +88,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
   - Option to switch types in the future
 - Updated: Refactored `evaluatedPieces` with optional parameters/default values [002]
 - Updated: `GameLogic.js`: Added hard coded symbols into the GamePieces object [004]
+- Updated: `StartListener.js` Minor JSDoc DocStrings changes [005]
 
 ### Removed
 
