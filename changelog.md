@@ -50,7 +50,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.23 v.0.3.02.003
+## Changelog: 2023.03.23 v.0.3.02.004
 
 ### Added
 
@@ -61,16 +61,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Added: Classs to `architecture`: `StartListener` [003]
   - Design, description, and class constructs and instantiation dependency diagrams.
   - Spotted the issue with the design of this class, the game object is never bound and instead the code binds to it owself. [003]
+- Added: `Issues.md` in [Documentation](_documentation/issues.md) [004]
+- Purpose: to log and journal about significant issues. Maybe overkill, as there are GitHub issues rto be used.
+- Added: `Decision.md` and updated with important decisions and choices.  [004]
 
-### Changed
+### Updated
 
-### Removed
+- Updated Issue with diagrams and classes
+- [[Refactor] App.js & Custom EventListener #3]
+- [[Refactor] StartListener.js : Remodel Custom EventListener #4]
+- [[Refactor] Game.js's constructor,  #5]
 
-### Fixed
+### Noted
 
-### ToDo
-
-### Decided
+- Noted - These activities are fine for now, but no code change, as been ill (Monday to Thursday). Tomorrow code change and testing.
 
 ---
 
