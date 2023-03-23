@@ -48,6 +48,39 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.22v.0.3.01.001
+
+### Bumped to 0.3.0 Function & Class versions
+
+- Bumped: see [App.js](/_documentation/symbols.md#app) for symbols changes & versioning, FREEZE states and TODOs,
+- Bumped: see [StartListener.js](/_documentation/symbols.md#start) for symbols changes for symbols changes & versioning, FREEZE states and TODOs,
+- Bumped: [MoveListeners.js](/_documentation/symbols.md#move) for symbols changes for symbols changes & versioning, FREEZE states and TODOs,
+- Bumped: [Game.js](/_documentation/symbols.md#game) for symbols changes for symbols changes & versioning, FREEZE states and TODOs,
+- Bumped: [GameLogic.js](/_documentation/symbols.md#logic) for symbols changes for symbols changes & versioning, FREEZE states and TODOs,
+- Bumped: [GameBoard.js](/_documentation/symbols.md#board) for symbols changes for symbols changes & versioning, FREEZE states and TODOs,
+- Bumped: [GamePieces.js](/_documentation/symbols.md#pieces) for symbols changes for symbols changes & versioning, FREEZE states and TODOs,
+
+### Noted
+
+- Noted: Why Bump: Post second mentor session, the code was refactored, and the class field values were updated to default values.
+- Noted: Intent to Tag the code to v.0.3.0
+- Noted: Intent to Use GiThub Issues to track further bugs and efforts of work.
+- Noted: Code is sifficient complexity that it needs more management.
+
+### Changed
+
+- Updated: `GameLogic.js`, `GameBoard.js` `GamePieces.js` `MoveListeners.js` signatures with log, and locaname parameters, froze helper functions and tagging those areas of concern.
+
+### Fixed
+
+- Fixed: GamePieces, GameLogic, Game, App GamePieces types or logic issues during Mentor Session 2023/03/21 10:30pm-11:30pm. Did not track fixes.
+
+### ToDo
+
+### Decided
+
+---
+
 ## Changelog: 2023.03.20 v.0.1.06.005
 
 ### Added
@@ -133,7 +166,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
