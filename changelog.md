@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 > - (Major.Minor.Patch.CommitIndex) (By CJ)
 > - Header Formatting & Intents as below
 
+---
+
 > ## Changelog: v.major.minor.patch.commitindex 20yy.mm.dd
 >
 > ### `Added`  for new features
@@ -48,6 +50,25 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.23 v.0.3.02.001
+
+### Added
+
+- Added: `architecture/` folder with .md files to track the Classs: Game [001]
+  - Design, description, and class constructs and instantiation dependency diagrams.
+
+### Changed
+
+### Removed
+
+### Fixed
+
+### ToDo
+
+### Decided
+
+---
+
 ## Changelog: 2023.03.22v.0.3.01.001
 
 ### Bumped to 0.3.0 Function & Class versions
@@ -74,10 +95,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Fixed
 
 - Fixed: GamePieces, GameLogic, Game, App GamePieces types or logic issues during Mentor Session 2023/03/21 10:30pm-11:30pm. Did not track fixes.
-
-### ToDo
-
-### Decided
 
 ---
 
