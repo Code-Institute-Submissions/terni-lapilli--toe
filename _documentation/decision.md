@@ -58,3 +58,14 @@ and may align with to [Semantic Versioning](http://semver.org/).
 | 014 | 2 | 3 | 4 | 5 | 6 | 7 | @iPoetDev | 9 | 10 | 11 | 12 |
 | 014 | 2 | 3 | 4 | 5 | 6 | 7 | @iPoetDev | 9 | 10 | 11 | 12 |
 | 014 | 2 | 3 | 4 | 5 | 6 | 7 | @iPoetDev | 9 | 10 | 11 | 12 |
+
+> Adjust ADR sequences later, as a post fix issue
+
+### ADR 2023/03/23 ADR00x
+
+- ***Headline*:  Refactor App.js, Startlistener.js, and Game.js**
+- *Issue*: Game not starting
+- *Bug*: Game object is orphaned in the code base
+- *Decision*: Refactor and Remodel
+- *Initiative*: Document the Class diagrams, and code flows, as triage, for App [#3](https://github.com/iPoetDev/terni-lapilli--toe/issues/3), for Game [#5](https://github.com/iPoetDev/terni-lapilli--toe/issues/5) and especially for StartListener [#4](https://github.com/iPoetDev/terni-lapilli--toe/issues/4)
+- See [Issues.md](_documentation/issues.md) for further details
