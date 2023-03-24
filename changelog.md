@@ -50,7 +50,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.24v.0.3.03.002
+## Changelog: 2023.03.24v.0.3.03.003
 
 ### New Issue
 
@@ -60,6 +60,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 - Added: `Game.js` `onInit()` method See [#5](https://github.com/iPoetDev/terni-lapilli--toe/issues/5) [001]
 - Added: `StartListener.js` `onInit()` method See [[#4](https://github.com/iPoetDev/terni-lapilli--toe/issues/4)] and latest v0.4.0 [#7](https://github.com/iPoetDev/terni-lap--toe/issues/7)
+- Added: `App.js` class props: eventType default value, new memeber, btnId =#start
+- Added: ToBe: Not yet implemented App onExit method to detatch removeListeners methods.
 
 ### Changed
 
@@ -68,10 +70,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Changed: `StartListener.js` `constructor` by changing @button object to {string} btnId = '#start' [002]
 - Updated: `StartListener.js` constructor Redorder and remodels constructor internals, and Class props, and the addListner params, with a try catch[002]
 - Updated: `StartListener.js` addListener method signature, params and conditionals [002]
+- Changed: `App.js` class props: newGame, startListener to undefined [003]
+- Changed: `App.js`constructor with try catch blocks and onError() methods [003]
+- Changed: `App.js` implemenetd the new StartListener call, using only the btnID string, not Element object [003]
 
 ### Removed
 
 - Removed: `StartListener.js` `onStart()` method See [[#4], & [[#7]] [002]
+- Removing: `App.js` class props: appConfg. startButton, userMoves [003]
+- Removed: Type checking and TypeError handing fron onError[003]
+- Removed: `App.js` onInit() as much initialisation for the app is on instantiation. [003]
+  - Also moved the game initialiseation to the StartListener.onInit() method. [003]
 
 ### Fixed
 
@@ -81,6 +90,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - ToBe: Maybe used this onInit() as a interface for changing difficulties, in between games.
   - Enabled by separation of concerns from costructore to initialiser methods.
   - One is called once, one to one, per object/class and another is many to one.
+- ToDo/ToBe: Create removeListener and detatch Custom Event Listens when the page/app is unloaded. [003]
 
 ### Decided
 
@@ -228,7 +238,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-  - - to improve readbility and santisation (truthy || falsey) for getters/setters
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
