@@ -50,18 +50,28 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.24v.0.3.03.001
+## Changelog: 2023.03.24v.0.3.03.002
+
+### New Issue
+
+- New Issue [#7](https://github.com/iPoetDev/terni-lapilli--toe/issues/5) and linked this to parent RFC [#4](https://github.com/iPoetDev/terni-lapilli--toe/issues/4)
 
 ### Added
 
 - Added: `Game.js` `onInit()` method See [#5](https://github.com/iPoetDev/terni-lapilli--toe/issues/5) [001]
+- Added: `StartListener.js` `onInit()` method See [[#4](https://github.com/iPoetDev/terni-lapilli--toe/issues/4)] and latest v0.4.0 [#7](https://github.com/iPoetDev/terni-lap--toe/issues/7)
 
 ### Changed
 
 - Changed: `Game.js` `constructor` by moving game state code to onInit() method See [#5](https://github.com/iPoetDev/terni-lapilli--toe/issues/5) [001]
 - Refactored: `Game.js` `isGameOver` to track the win or draw state and log these to console. See [#6](https://github.com/iPoetDev/terni-lapilli--toe/issues/6) [001]
+- Changed: `StartListener.js` `constructor` by changing @button object to {string} btnId = '#start' [002]
+- Updated: `StartListener.js` constructor Redorder and remodels constructor internals, and Class props, and the addListner params, with a try catch[002]
+- Updated: `StartListener.js` addListener method signature, params and conditionals [002]
 
 ### Removed
+
+- Removed: `StartListener.js` `onStart()` method See [[#4], & [[#7]] [002]
 
 ### Fixed
 
@@ -218,7 +228,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
