@@ -50,7 +50,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.25v.0.4.0.001
+## Changelog: 2023.03.25v.0.4.0.002
 
 ### Bumped
 
@@ -71,6 +71,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
   - see [#8](https://github.com/iPoetDev/terni-lapilli--toe/issues/8) [001]
 - Updated: `Game.js` isGameOver [001]
   - see [#6](https://github.com/iPoetDev/terni-lapilli--toe/issues/6) [001]
+- Adjusted: `StartListener` addListener signature with default locname var [002]
 
 ### Removed
 
@@ -287,7 +288,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-  - - to improve readbility and santisation (truthy || falsey) for getters/setters
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
