@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.2_v.0.1.0_.001
+## Changelog: 2023.03.2_v.0.4.0_.001
 
 ### Added
 
@@ -47,6 +47,55 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### ToDo
 
 ### Decided
+
+---
+
+## Changelog: 2023.03.25v.0.4.0.001
+
+### Bumped
+
+- Bumped: `StartListener.js` to v.0.4.0, [001]
+  - Skips docstrings update for time prioritisation. [001]
+
+- Bumped: `App.js` to v.0.4.0 [001]
+  - Skips docstrings update for time prioritisation. [001]]
+
+- Bumped: `Game.js` to v.0.4.0 [001]
+  - Skips docstrings update for time prioritisation. [001]
+
+### Added
+
+### Changed
+
+- Updated: `App.s` onError [001]
+  - see [#8](https://github.com/iPoetDev/terni-lapilli--toe/issues/8) [001]
+- Updated: `Game.js` isGameOver [001]
+  - see [#6](https://github.com/iPoetDev/terni-lapilli--toe/issues/6) [001]
+
+### Removed
+
+### Fixed
+
+- Tested: `StartListener.js` customEventListener on start button clicked [001]
+
+  - See more at [#7](https://github.com/iPoetDev/terni-lapilli--toe/issues/7)
+  - Related are
+    - [#3](https://github.com/iPoetDev/terni-lapilli--toe/issues/3)
+    - [#4](https://github.com/iPoetDev/terni-lapilli--toe/issues/4)
+    - [#5](https://github.com/iPoetDev/terni-lapilli--toe/issues/5)
+
+### ToDo
+
+- ToDo: Repeat design pattern for `MoveListener.js` [001]
+
+  - See [#9](https://github.com/iPoetDev/terni-lapilli--toe/issues/9)
+- ToDo: Test new design pattern for `MoveListener.js` [001]
+
+### Decided/Noted
+
+- Noted: Using issues, via CodeStream, removed/reduced the verbosity of this changelog [001]
+
+- Decided: Used GitHub Issues to track changes and bugs, and notes and tersely summarise in Changelog [001]
 
 ---
 
@@ -238,7 +287,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
