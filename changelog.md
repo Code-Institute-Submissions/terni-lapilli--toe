@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.2_v.0.4.0_.001
+## Changelog: 2023.03.2_v.0.4.00.001
 
 ### Added
 
@@ -45,6 +45,50 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Fixed
 
 ### ToDo
+
+---
+
+## Changelog: 2023.03.26v.0.4.01.001
+
+- Bumped: `MoveListener.js` to v.0.4.0, [001]
+  - Skips docstrings update for time prioritisation. [001]
+
+### Added
+
+- Added: moveTypeID, as class prop. [001]
+  - See issue [#9](https://github.com/iPoetDev/terni-lapilli--toe/issues/9)
+
+- Added: onClick to `MoveListener.js` [001]
+- Added: the addEventListner with the onClick bind callback func [001]
+- Added: console log to output funcitonality of each move [001]
+- Added: `App.js`: newMoveListener in a try catch block [001],
+- Added: passed the instance of game to it. [001]
+
+### Changed
+
+- See issue [#9](https://github.com/iPoetDev/terni-lapilli--toe/issues/9)
+
+- Updated: `MoveListener.js` class props [001]
+- Changed: `MoveListener.js` `constructor`'s call of SetListener to pass event and bind to onClick
+- Updated: `App.js` Minor refactor/edits to error Template literals for readability and consistency.
+
+### Removed
+
+- [#9](https://github.com/iPoetDev/terni-lapilli--toe/issues/9)
+
+- Removed: `App.js` onInit and it's call in `index.html`
+
+### Fixed
+
+[#9](https://github.com/iPoetDev/terni-lapilli--toe/issues/9)
+
+- Fixed: User clicks on cells and updated game object.
+
+### ToDo
+
+[#9](https://github.com/iPoetDev/terni-lapilli--toe/issues/9)
+
+- TODO: Replace this with UI ouput for each made move, what move and any illegal move (not just how many clicks)
 
 ### Decided
 
@@ -63,8 +107,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Bumped: `Game.js` to v.0.4.0 [001]
   - Skips docstrings update for time prioritisation. [001]
 
-### Added
-
 ### Changed
 
 - Updated: `App.s` onError [001]
@@ -72,8 +114,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Updated: `Game.js` isGameOver [001]
   - see [#6](https://github.com/iPoetDev/terni-lapilli--toe/issues/6) [001]
 - Adjusted: `StartListener` addListener signature with default locname var [002]
-
-### Removed
 
 ### Fixed
 
