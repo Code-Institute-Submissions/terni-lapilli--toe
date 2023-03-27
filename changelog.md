@@ -48,6 +48,34 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.27v.0.4.03.001
+
+### Added
+
+- Added: `App.js` - v0.4.0 [#11](https://github.com/iPoetDev/terni-lapilli--toe/issues/11)
+  - For Validation
+  - For Inventory for v0.4.0: Using CodeSteam code block capture to track diffs in IDE for in issues.
+  - For CODE FREEZE: prior to submission.
+- Added: app.md screenshots of code in ./_documentation/code/0.4.0
+- Added: `StartListener.js` - v0.4.0 [#12](https://github.com/iPoetDev/terni-lapilli--toe/issues/12)
+  - For Validation
+  - For Inventory for v0.4.0: Using CodeSteam code block capture to track diffs in IDE for in issues.
+  - For CODE FREEZE: prior to submission.
+- Added: startListener.md screenshots of code in ./_documentation/code/0.4.0
+
+### Changed
+
+- Updated: `app.md` in documentation
+- Updated: `startlistener.md` in documentation
+
+### Removed
+
+### Fixed
+
+### ToDo
+
+---
+
 ## Changelog: 2023.03.26v.0.4.01.001
 
 - Bumped: `MoveListener.js` to v.0.4.0, [001]
