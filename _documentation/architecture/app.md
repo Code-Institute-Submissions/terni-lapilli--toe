@@ -67,6 +67,29 @@ classDiagram
 
 > Ignores the auxillary objects and properties used for tracing, logging and debugging for clarity.
 
+### App v.0.4.0 2023/03/27
+
+#### App Module
+
+![](../code/0.4.0/App/001-App-Module.png "App.js Module & JSDoc Summary")
+
+### App Class
+
+![](../code/0.4.0/App/002-app-declarations-props.png "App.js Class Declarations and Field properties ")
+
+### App Class Constructor
+
+![](../code/0.4.0/App/003-app-constructor.png "App.js Class Constructor")
+
+### App Class Methods
+
+![](../code/0.4.0/App/004-app-onerror.png "App.js Class Methods: onError")
+
+### App Logging
+
+![](../code/0.4.0/App/005-game-logger.png)
+![](../code/0.4.0/App/006-app-logger.png "App.js -appLogger() method"
+
 ### App v0.3.0 2023/03/23
 
 #### StartListener only
