@@ -130,3 +130,37 @@ graph TD
 - The code is functional but inoperative.
 
 - Next step > Refactor and Improve the Code.
+
+### Snapshots v0.4.0
+
+#### Module
+
+![](../code/0.4.0/StartListener/001-startlistener-module.png "StartListener Module Defintion")
+
+#### Class declaration and properties
+
+![](../code/0.4.0/StartListener/002-startlistener-declaration-props.png "StartListener Class Definition")
+
+#### constructor
+
+![](../code/0.4.0/StartListener/003-startlistener-constructor.png)
+
+#### onInit
+
+![](../code/0.4.0/StartListener/004-startlistener-methods-initialiser.png)
+
+#### addListener
+
+![](../code/0.4.0/StartListener/004-startlistener-methods-addListener.png)
+
+#### onError
+
+![](../code/0.4.0/StartListener/004.3-startlistener-methods-onerror.png)
+
+#### evaluateParameter
+
+![](../code/0.4.0/StartListener/004.1-startlistener-methods-evaluateparamter.png)
+
+#### evaluateEventType
+
+![](../code/0.4.0/StartListener/004.5-startlistener-methods-evaluateeventtype.png)
