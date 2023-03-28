@@ -48,6 +48,40 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.28v.0.4.00-04.001
+
+### Bumped to 0.4.0 Function & Class versions
+
+- Bumped: see [App.js #11] [001]
+- Bumped: see [StartListener.js #12](https://github.com/iPoetDev/terni-lapilli--toe/issues/12) [001]
+- Bumped: [Game.js #13](https://github.com/iPoetDev/terni-lapilli--toe/issues/13) [001]
+- Bumped: [MoveListeners.js #14](https://github.com/iPoetDev/terni-lapilli--toe/issues/14) [001]
+- Bumped: [GameLogic.js #15](https://github.com/iPoetDev/terni-lapilli--toe/issues/15) [001]
+- Bumped: [GameBoard.js #16](https://github.com/iPoetDev/terni-lapilli--toe/issues/16) [001]
+  - and even with protoype for version 0.5.0: update/reset/set/fetch grid, cell, json and board data
+- Bumped: [GamePieces.js #17](https://github.com/iPoetDev/terni-lapilli--toe/issues/14)
+
+### Changed
+
+- Updated: `MoveListener.js`: on each listener event, bind the event, target and the game in onClick() **=> Testable?** [001]
+- Updated: `MoveListener.js`: `onClick()` JSDocs [001]
+- Updated: `MoveListener.js`: `onClick()` updated makeMove method signature [001]
+- Updated: `MoveListener.js`: `onClick()` Added early returns, not else statements [001]
+- Updated: `MoveListener.js`: `onClick()` Added early returns, not else statements [001]
+- Updated: `Game.js`: Minor template literal edits [001]
+- Updated: `Game.js`: `checkMove(),makeMove()` Added Param literal typeof check,[001]
+  - else do nothing (error flow for critical flow?)
+- Updated: `Game.js`: `nextTurn(), isGameOver()` Added boolean for game running as a param, [001]
+- Updated: `Game.js` `evaluateParameter()` with early returns [001]
+- Updated: `Game.js`: `updateGrid()` Prototype enchancement interface to update Board data [001]
+- Updated: `GameLogic.js` Reafactored else statements with standalone early return if statements [001]
+- Updated: `GameDebug.js` - linter added semi-colons [001]
+
+### Removed
+
+- Removed: `MoveListener.js`: `onEachMove()` method as this was being called twice. [001]
+- Removed: `GamePieces.js` - `evaluatePieces` > Move functionality to getX/getO [001]
+
 ## Changelog: 2023.03.27v.0.4.03.001
 
 ### Added
@@ -356,7 +390,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
