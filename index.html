@@ -86,8 +86,10 @@
 				* Cause: import statement outside a module (at App.js:2:1)
 				* @requires App
 			  * @module module:/lib/App.js
+				* @todo: remove / before lib/App.js and
+				* @todo  test on GH Pagesbefore submission after deploy
 				*/
-				import { App } from "/lib/App.js"
+				import { App } from "./lib/App.js"
 				const app = new App()
 		</script>
 	</body>

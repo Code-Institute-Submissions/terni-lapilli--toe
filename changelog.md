@@ -38,9 +38,51 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ### Added
 
+- Added: updateOnMove, updateAtEnd, clearUI methods to handle utility activities
+  - Designed outside of game controller, for UI control
+
 ### Changed
 
 ### Removed
+
+### Fixed
+
+### ToDo
+
+---
+
+## Changelog: 2023.03.29v.0.4.1.001
+
+# Bumped
+
+- Bumped : `MoveListener.js` to 0.4.1 See [#14](https://github.com/iPoetDev/terni-lapilli--toe/issues/14)
+- Bumped: 001/002 Code Freeze: Module, Class,
+- Bumped: 003 Code Freeze: Declarations,  Constructor,
+- Bumped: 004: Code Freeze: setListeners,
+- Bumped: 006: Code Freeze: onError,
+- Bumped: 007: Code Freeze: evaluateParameters, evaluateEventType
+- Bumped: 005: WIP: onClick and UI/User action interface methods
+-
+
+### Added
+
+- Added: updateOnMove, updateAtEnd, clearUI methods to handle utility activities
+  - Designed outside of game controller, for UI control
+- Added: RayCast screenshots for documentation of 0.4.1 MoveListener.js
+
+### Changed
+
+- Changed: Updated extensively the Class definition JSDocs
+- Changed: Updated extensively the Class props JSDocs
+- Changed: Updated onClick to use destructuring
+- Changed: Minor edits to symbols, literals in onError
+- Changed: Introduced literal symbol for type checking string literals
+- Updated: .gitignored files not for remote repo
+- Updated: index.html
+
+### Removed
+
+- Removed: Old Files
 
 ### Fixed
 
