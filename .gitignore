@@ -27,3 +27,4 @@ lib/app.md
 lib/game.md
 lib/test.jsbook
 lib/url.md
+/.github/workflows/linter.yml
