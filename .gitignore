@@ -29,3 +29,5 @@ lib/test.jsbook
 lib/url.md
 /.github/workflows/linter.yml
 /.github/linters
+/wallaby.conf.js
+/markdownlint-cli2.yml

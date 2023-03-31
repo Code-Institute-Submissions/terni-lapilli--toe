@@ -34,6 +34,32 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.31v.0.4.01.001 App.js
+
+### Added
+
+- Proposed: 004: onExit - Not yet implemented [001]
+
+### Changed
+
+- Updated: 001: Module JSDoc [001]
+- Updated: 002: Class JSDoc [001]
+- Updared: 003: Constructor JSDoc [001]
+- Updated: 003: Tidied with Constructor body [001]
+- Updated: 005: onError - Tidied up with const message = literal [001]
+
+### Removed
+
+- Removed: 004: onInit [001]
+- Removed: 006: gameLogger method [001]
+- Removed: 006: appLogger method [001]
+
+### Fixed
+
+### ToDo
+
+---
+
 ## Changelog: 2023.03.2_v.0.4.00.001
 
 ### Added
@@ -432,7 +458,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-  - - to improve readbility and santisation (truthy || falsey) for getters/setters
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
