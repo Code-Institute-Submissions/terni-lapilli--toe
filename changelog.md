@@ -34,19 +34,36 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.31v.0.4.01.001 App.js
+## Changelog: 2023.03.31v.0.4.01.002 StartListener.js
+
+### Bumped
+
+- Bumped: All `StartListener.js` Methods 0.4.1 2023/03/31 [002]
 
 ### Added
 
 - Proposed: 004: onExit - Not yet implemented [001]
+- Added: 003 Declaration: startButtonClick [002]
+- Proposed: 004: isStartClicked - new method, [02]
+- Code snapshot (bluk) media for Documentation [002]
 
 ### Changed
+
+- Version 0.4.1-
 
 - Updated: 001: Module JSDoc [001]
 - Updated: 002: Class JSDoc [001]
 - Updared: 003: Constructor JSDoc [001]
 - Updated: 003: Tidied with Constructor body [001]
 - Updated: 005: onError - Tidied up with const message = literal [001]
+- Updated: 001 Module JSDoc [002]
+- Updated: 002: Class JSDoc [002]
+- Updated: 003: Declarations JSDoc [002]
+- Updated: 003: Class Props JSDoc [002]
+- Updated: 003: Constructor JSDoc [002]
+- Update: 005: Minor to addlistener [002]
+- Updated: 006: onError: symbol name e-error, log ->check [002]
+- Updated: 007: evaluateParameter, evaluatedEventType, symbols [002]
 
 ### Removed
 
@@ -458,7 +475,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
