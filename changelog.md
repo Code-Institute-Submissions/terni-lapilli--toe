@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.31v.0.4.01.002 StartListener.js
+## Changelog: 2023.03.31v.0.4.07.003 Readme.md
 
 ### Bumped
 
@@ -64,6 +64,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Update: 005: Minor to addlistener [002]
 - Updated: 006: onError: symbol name e-error, log ->check [002]
 - Updated: 007: evaluateParameter, evaluatedEventType, symbols [002]
+- Updated: `Readme`
+  - Updated: 1.3, 2.1.3, 3.1.2, 3.2.5, 3.2.6.1, 3.2.6.2. 3.2.7
 
 ### Removed
 
@@ -77,7 +79,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.2_v.0.4.00.001
+## Changelog: 2023.03.2_v.0.4.06.001
 
 ### Added
 
@@ -94,7 +96,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.29v.0.4.1.001
+## Changelog: 2023.03.29v.0.4.5.001
 
 # Bumped
 
@@ -167,7 +169,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Removed: `MoveListener.js`: `onEachMove()` method as this was being called twice. [001]
 - Removed: `GamePieces.js` - `evaluatePieces` > Move functionality to getX/getO [001]
 
-## Changelog: 2023.03.27v.0.4.03.001
+## Changelog: 2023.03.27v.0.4.02.001
 
 ### Added
 
