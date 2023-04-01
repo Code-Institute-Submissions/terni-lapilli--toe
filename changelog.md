@@ -34,6 +34,51 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.03.31v.0.4.08.001-004
+
+### WIP
+
+- WIP: 005: `MoveListener.js` to v0.4.2 [003]
+  - onClick: the UI controller for updating and writing to UI on game state
+  - Removed checkCell for now (04/01) [003]
+  - updateOnMove [003]
+  - updateAtEnd [003]
+  - clearUI [003]
+
+### Added
+
+- Added: 003: `validMoveState` boolean for a state flag
+`Game.js`
+- Added: isGameStarted to enable the Game Active state
+
+### Changed
+
+`StartListener.js`
+
+- Changed: 003: Refactored Constructor, moving literal strings into const [001]
+- Chaaged: 003: Refactored onInit, adjusted symbols, and literals to consts [001]
+- Changed: 003: Refactored addListener error symbol. [001]
+`MoveListener.js`
+- Changed: 002: Updated Class, JSDoc [002]
+- Changed: 003: Adjust the log vars and type === string [002]
+- Changed: 004: `SetListener` var logs [003]
+`Game.js`
+- Updated: 004: onInit: JSDoc and InInit symbols, refactoring, removed isRunning flow control
+- Updated: 004: onInit: error symbols changed
+- Changed: 004.01: Refactored checkMove: separating conditionals & use early return
+- Changed: 004.02: updateGrid adjustments
+- Changed: 005: makeMove: debugging, refactoring and WIP
+- Changed: 005: nextTurn: apply switch pieces on each return and return gthe new piece
+- Changed: 006: `isGameOver` Minor refactor, with explicit booleans
+- Changed: 007: `clearCurrentGame`: Early attempts to reset node/grid/game data.
+
+### Removed
+
+`Game.js`
+
+- Removed: 003: set gamePieces, gameBoard to undefined in Class Declaration
+- Removed: `gameLogger` methods.
+
 ## Changelog: 2023.03.31v.0.4.07.003 Readme.md
 
 ### Bumped
@@ -49,21 +94,23 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ### Changed
 
-- Version 0.4.1-
+- Version 0.4.1
 
-- Updated: 001: Module JSDoc [001]
-- Updated: 002: Class JSDoc [001]
-- Updared: 003: Constructor JSDoc [001]
-- Updated: 003: Tidied with Constructor body [001]
-- Updated: 005: onError - Tidied up with const message = literal [001]
-- Updated: 001 Module JSDoc [002]
-- Updated: 002: Class JSDoc [002]
-- Updated: 003: Declarations JSDoc [002]
-- Updated: 003: Class Props JSDoc [002]
-- Updated: 003: Constructor JSDoc [002]
-- Update: 005: Minor to addlistener [002]
-- Updated: 006: onError: symbol name e-error, log ->check [002]
-- Updated: 007: evaluateParameter, evaluatedEventType, symbols [002]
+- `App.js`
+  - Updated: 001: Module JSDoc [001]
+  - Updated: 002: Class JSDoc [001]
+  - Updared: 003: Constructor JSDoc [001]
+  - Updated: 003: Tidied with Constructor body [001]
+  - Updated: 005: onError - Tidied up with const message = literal [001]
+- `StartListener.js`
+  - Updated: 001 Module JSDoc [002]
+  - Updated: 002: Class JSDoc [002]
+  - Updated: 003: Declarations JSDoc [002]
+  - Updated: 003: Class Props JSDoc [002]
+  - Updated: 003: Constructor JSDoc [002]
+  - Update: 005: Minor to addlistener [002]
+  - Updated: 006: onError: symbol name e-error, log ->check [002]
+  - Updated: 007: evaluateParameter, evaluatedEventType, symbols [002]
 - Updated: `Readme`
   - Updated: 1.3, 2.1.3, 3.1.2, 3.2.5, 3.2.6.1, 3.2.6.2. 3.2.7
 
@@ -477,7 +524,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-  - - to improve readbility and santisation (truthy || falsey) for getters/setters
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]

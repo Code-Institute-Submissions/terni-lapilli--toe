@@ -31,3 +31,17 @@ lib/url.md
 /.github/linters
 /wallaby.conf.js
 /markdownlint-cli2.yml
+_documentation/diagrams/OnClick Move Piece.drawio
+_documentation/diagrams/OnClick Move Piece.svg
+.gitignore
+_documentation/code/New folder/2023-03-30 18_29_28-● OnClick Move Piece.drawio - diagrams - CI-PP2 - Visual Studio Code.png
+_documentation/code/New folder/2023-03-31 10_24_11-_ Code Institute.png
+_documentation/code/New folder/2023-03-31 10_24_26-_ Code Institute.png
+_documentation/code/New folder/2023-03-31 10_24_48-_ Code Institute.png
+_documentation/code/New folder/checkMove.png
+_documentation/code/New folder/makeMove - not boolean returned.png
+_documentation/code/New folder/onClick - debugging efforts.png
+_documentation/code/New folder/onClick - outcome undefined.png
+lib/__GameError.js
+lib/__GamePlayers.js
+_documentation/architecture/startlistener.md
