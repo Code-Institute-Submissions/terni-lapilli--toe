@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.31v.0.4.08.001-004
+## Changelog: 2023.03.31v.0.4.08.001-005
 
 ### WIP
 
@@ -63,14 +63,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Changed: 003: Adjust the log vars and type === string [002]
 - Changed: 004: `SetListener` var logs [003]
 `Game.js`
-- Updated: 004: onInit: JSDoc and InInit symbols, refactoring, removed isRunning flow control
-- Updated: 004: onInit: error symbols changed
-- Changed: 004.01: Refactored checkMove: separating conditionals & use early return
-- Changed: 004.02: updateGrid adjustments
-- Changed: 005: makeMove: debugging, refactoring and WIP
-- Changed: 005: nextTurn: apply switch pieces on each return and return gthe new piece
-- Changed: 006: `isGameOver` Minor refactor, with explicit booleans
-- Changed: 007: `clearCurrentGame`: Early attempts to reset node/grid/game data.
+- Updated: 004: onInit: JSDoc and InInit symbols, refactoring, removed isRunning flow control [004]
+- Updated: 004: onInit: error symbols changed [004]
+- Changed: 004.01: Refactored checkMove: separating conditionals & use early return [004]
+- Changed: 004.02: updateGrid adjustments [004]
+- Changed: 005: makeMove: debugging, refactoring and WIP [004]
+- Changed: 005: nextTurn: apply switch pieces on each return and return gthe new piece [004]
+- Changed: 006: `isGameOver` Minor refactor, with explicit booleans [004]
+- Changed: 007: `clearCurrentGame`: Early attempts to reset node/grid/game data. [004]
+- Changed: 005: `makeMove` - added/updated with try..catch and error control. [005]
 
 ### Removed
 
@@ -524,7 +525,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
