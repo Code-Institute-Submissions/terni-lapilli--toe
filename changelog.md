@@ -34,7 +34,52 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.03.31v.0.4.08.001-005
+## Changelog: 2023.04.02v.0.4.08.001
+
+### Added
+
+`Game.js`
+
+- Added: Game states
+  - (Initi, running, stop, terminal, continue, reset and exit states) as class props constants
+
+### Changed
+
+`Game.js` [001]
+
+- Changed: 002: Class : Add game states to JSDocs
+- Changed: 003: Declaration: Game states
+- Changed: 003: Constructor: JSDoc mods
+- Changed: 003: Constructor: Assigned block vars, constants
+- Changed: ALL: Shits template literals into own message/trace vars: Message+Trace pattern in all methods
+  - Separate for improve readability, cleaner code
+- Changed: 004: `onInit`: Signatre, Message+Trace
+- Changed: 004: onInit: Message-Trace
+- Updated: 005: `isGameStarted` JSDoc, Bump version
+- Changed: 005: `isGameStarted` using constants, Message+Trace
+- Updated: 006: `checkMove` JSDoc, Bump version
+- Changed: 006: `checkMove` using constants, Message+Trace
+- Updated: 007: `updataeGrid` JSDoc, Bump version
+- Changed: 007: `updateGrid` using constants, Message+Trace
+- Updated: 008: `makeMove` JSDoc, Bump version
+- Changed: 008: `makeMove` using constants, Message+Trace
+- Changed: 008: `makeMove` Tidied up and Improve readability
+- Updated: 009: `nextTurn` JSDoc, Bump version
+- Changed: 009: `nextTurn` using constants, Message+Trace
+- Updated: 010: `isGameOver` JSDoc, Bump version
+- Changed: 010: `isGameOver` using constants, Message+Trace,
+- Changed: 010: `isGameOver` Tidied up Readability..
+- Updated: 010: `clearCurrentGame` JSDoc, Bump version
+- Changed: 011: `clearCurrentGame` using constants, Message+Trace
+- Changed: 010: `clearCurrentGame` Tidied up Readability..
+
+### Removed
+
+Game.js
+
+- Removed: 004: Debugging statements
+
+## Changelog: 2023.03.31v.0.4.08.001-006
 
 ### WIP
 
@@ -525,7 +570,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-  - - to improve readbility and santisation (truthy || falsey) for getters/setters
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]

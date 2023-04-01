@@ -45,3 +45,5 @@ _documentation/code/New folder/onClick - outcome undefined.png
 lib/__GameError.js
 lib/__GamePlayers.js
 _documentation/architecture/startlistener.md
+/lib/__GameConfig.js
+/lib/init.js
