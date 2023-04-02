@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
-## Changelog: 2023.04.02v.0.4.02.001,002
+## Changelog: 2023.04.02v.0.4.02.001,002, 003
 >
 > Relaign Changelog with semver of code
 
@@ -42,6 +42,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 - Bumped: `StartListener.js` 0.4.1->0.4.2 [001]
 - Bumped: `MoveListener.js` 0.4.1-0.4.2 [002]
+- Bumped: `Game.js` 0.4.1-0.4.2 [002]
+
+### WIPD
+
+- WIP: `makeMove` @TODO
 
 ### Added
 
@@ -51,11 +56,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
   - Noted: Don't use TS per se,
   - Noted: for code conformity, native IDE linting for hotpots is useful
   - Needed: configure TS to the full in VSCode.
-`MoveListener.js`
-- Added: @tsignore statements,[002]
-  - Noted: Don't use TS per se,
-  - Noted: for code conformity, native IDE linting for hotpots is useful
-  - Needed: configure TS to the full in VSCode.
+- `MoveListener.js`
+  - Added: @tsignore statements,[002]
+    - Noted: Don't use TS per se,
+    - Noted: for code conformity, native IDE linting for hotpots is useful
+    - Needed: configure TS to the full in VSCode.
+- `Game.js`
+  - Added: Class definitions, JSDoc, for constants, interfaces and new functions
+  - Added: JSDoc constants to method JSDoc
 
 ### Changed
 
@@ -65,11 +73,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 - Changed: Updated JSDoc linting/type issues [001]
 - Changed: Removed `this.` from constructor signatures TS linting [001]
 - Changed: Included Message+Trace literal pattern for readability [001]
-`MoveListener.js`
+- `MoveListener.js`
 - Changed: Update to all method versions, [002]
 - Changed JSDoc types , optional params, edits, errors [002]
 - Changed: Update of string literals to Message+Trace pattern [002]
 - Changed: Deproirtised this.newGame, move to passing instance in memory [002]
+- `Game.js`
+
+  -
 
 ### Fixed
 
@@ -79,6 +90,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
   - Useful due to using/setting game state contants
     - Set on all class member/ each instances.
   - Fixed: this.newGame coming up as a string, not @type {Game} [002]
+
+### Breaking Change/Bug
+
+- ToFix: Import/Paoths: Locahost v GitHub Pages
+  - All: `App`,`StartListner`, `MoveListener`,`Game`, `GameLogic`,`GameBoard`, `GamePieces`,
 
 ### Removed
 
@@ -623,7 +639,7 @@ Game.js
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
