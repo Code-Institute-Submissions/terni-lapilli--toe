@@ -34,6 +34,59 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 ---
 
+## Changelog: 2023.04.02v.0.4.02.001,002
+>
+> Relaign Changelog with semver of code
+
+### Bumped
+
+- Bumped: `StartListener.js` 0.4.1->0.4.2 [001]
+- Bumped: `MoveListener.js` 0.4.1-0.4.2 [002]
+
+### Added
+
+`StartListener.js`
+
+- Added: @tsignore statements,[001]
+  - Noted: Don't use TS per se,
+  - Noted: for code conformity, native IDE linting for hotpots is useful
+  - Needed: configure TS to the full in VSCode.
+`MoveListener.js`
+- Added: @tsignore statements,[002]
+  - Noted: Don't use TS per se,
+  - Noted: for code conformity, native IDE linting for hotpots is useful
+  - Needed: configure TS to the full in VSCode.
+
+### Changed
+
+`StartListener.js`
+
+- Changed: Removed typscript linting issues [001]
+- Changed: Updated JSDoc linting/type issues [001]
+- Changed: Removed `this.` from constructor signatures TS linting [001]
+- Changed: Included Message+Trace literal pattern for readability [001]
+`MoveListener.js`
+- Changed: Update to all method versions, [002]
+- Changed JSDoc types , optional params, edits, errors [002]
+- Changed: Update of string literals to Message+Trace pattern [002]
+- Changed: Deproirtised this.newGame, move to passing instance in memory [002]
+
+### Fixed
+
+- Fixed: clearUI: correct default is this.fileName, not logLevel, and type is now string. [002]
+- Fixed: Use of correct boolean, could be root of why outcome === undefined [002]
+  - Now: uses the current instance level `game.gameRunning` state as a check
+  - Useful due to using/setting game state contants
+    - Set on all class member/ each instances.
+  - Fixed: this.newGame coming up as a string, not @type {Game} [002]
+
+### Removed
+
+`StartListener.js`
+
+- Removed: `addListeners` removed signature @params or dehoisted to block vars [001]
+`MoveListener.js`
+
 ## Changelog: 2023.04.02v.0.4.08.001
 
 ### Added
