@@ -24,7 +24,7 @@ body:
   - type: textarea
     id: problem-statement
     attributes:
-      label: Problem Statement: Description
+      label: Problem Statement Description
       description: Please provide a concise description of your issue?
       placeholder: Short outline of a simple atomic problem or bug
     validations:
