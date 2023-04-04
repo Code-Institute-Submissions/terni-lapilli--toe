@@ -32,13 +32,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 > **Template**
 
-## Changelog: 2023.04.04v.0.4.02.001
+## Changelog: 2023.04.04v.0.4.02.003
 
 ### Bumped
 
 - Bumped: `App.js` --> 0.4.2
   - [x] Bumped JSDocs: Module, Class, Declaration, Methods
   - Not onExit - WIP
+- Bumped: `GameLogic.js` 0.2.0 --> 0.4.2
+  - [x] Bumped JSDocs: Module, Class, Declaration, Methods
+  -
 
 ### Changed
 
@@ -47,6 +50,25 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
   - Changed: Improved method readability
   - Changed: Improved JSDocs
   - Changed: Updated: refactored onError.
+- `GameLogic.js`
+  - Changed: filepaths to imports
+  - Changed: Updated Section 002: Class Definition JSDocs
+  - Changed: Symbol renames, & JSDoc edits
+  - `isAWin` | `isADraw`
+    - Changed: Added/Refactored to Message+Trace pattern
+    - Changed: Aligned symbol names with class props
+    - Changed: Refactored for Constants for state
+  - evaluateParameters | evaluateType
+    - Changed: Refactored for Message & Trace
+    - Changed: symbol renames
+
+### Removed
+
+- Removed: GameLogic: gameLogger method
+
+- #### Fix
+
+- Fixed: Filepaths to libs
 
 ---
 
