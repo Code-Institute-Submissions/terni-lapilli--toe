@@ -32,6 +32,22 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 > **Template**
 
+## Changelog: 2023.04.04v.0.4.02.001
+
+### Bumped
+
+- Bumped: `App.js` --> 0.4.2
+  - [x] Bumped JSDocs: Module, Class, Declaration, Methods
+  - Not onExit - WIP
+
+### Changed
+
+- `App.js`
+  - Changed: Updated: Message&Trace pattern for string literals - Constructor, onError
+  - Changed: Improved method readability
+  - Changed: Improved JSDocs
+  - Changed: Updated: refactored onError.
+
 ---
 
 ## Changelog: 2023.04.02v.0.4.02.001,002, 003
@@ -260,7 +276,7 @@ Game.js
 
 ## Changelog: 2023.03.29v.0.4.5.001
 
-# Bumped
+### Bumped
 
 - Bumped : `MoveListener.js` to 0.4.1 See [#14](https://github.com/iPoetDev/terni-lapilli--toe/issues/14)
 - Bumped: 001/002 Code Freeze: Module, Class,
