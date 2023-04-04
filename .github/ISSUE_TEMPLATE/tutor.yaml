@@ -5,9 +5,6 @@ labels: ["tutoring", "triage", "debugging"]
 assignees:
   - ipoetdev
 body:
-  - type: markdown
-    attributes:
-      value: Tutors are here to help you understand specific programming concepts, and to develop your troubleshooting skills! Over 90 minute per week is allowed. The interface is by text.
   - type: dropdown
     id: project
     attributes:
