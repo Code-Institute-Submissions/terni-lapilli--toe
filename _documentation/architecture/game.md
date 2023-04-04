@@ -109,3 +109,23 @@ graph TD
   2.0.3 --gamePieces--> 2.0.5[new GameLogic: gameLogic]
   2.0.4 --gameBoard--> 2.0.5
 ```
+
+### App Snap
+
+![](../code/0.4.0/Game/001-game-module.png)
+
+![](../code/0.4.0/Game/002-game-declarations-props.png)
+
+![](../code/0.4.0/Game/003-game-constructor.png)
+
+![](../code/0.4.0/Game/004-game-onitit.png)
+
+![](../code/0.4.0/Game/004-game-onitit.png)
+
+![](../code/0.4.0/Game/007-game-makemove.png)
+
+![](../code/0.4.0/Game/006-game-updategrid.png)
+
+![](../code/0.4.0/Game/007-game-nextturn.png)
+
+![](../code/0.4.0/Game/oo5-game-checkmove.png)
