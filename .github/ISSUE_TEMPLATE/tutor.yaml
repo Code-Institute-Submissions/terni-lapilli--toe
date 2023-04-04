@@ -1,7 +1,7 @@
 name: CI Tutor
 description: Workflow for a Code Institute Tutor Session
 title: "[Tutor]: "
-labels: ["tutoring", "triage", ""]
+labels: ["tutoring", "triage", "debugging"]
 assignees:
   - ipoetdev
 body:
