@@ -32,6 +32,34 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 > **Template**
 
+## Changelog: 2023.04.06v.0.4.02.003
+
+### Bumped
+
+- Bumped: `GamePieces.js` --> 0.4.2
+  - [x] Bumped JSDocs: Module, Class, Declaration, Methods
+  - [x] Raycast Code JSDoc and Methods
+  - [x] Prepared Class for Preview/Pre-releease, pre stable.
+  - [x] Updated [#17](https://github.com/iPoetDev/terni-lapilli--toe/issues/17) [Codestream](https://api.codestream.com/c/ZBNk4xDOQ2o6RTpe/0_KRUMj8SrCZcojBn-v81A)
+
+### Added
+
+### Changed
+
+- Changed: Refactored with message+ trace for improved readability
+- Changed: Updated JSDoc types, and tidying up
+- Changed: Updated method signature defaults
+- Changed :Single line conditionals, now inlined
+
+### Removed
+
+- Removed: `hasAPiece` helper method
+- Removed: `deBug` from positive flow blocks
+
+### Fixed
+
+- Fixed: 6 errorlens issues, with Error Objects and other concerns
+
 ## Changelog: 2023.04.04v.0.4.02.003
 
 ### Bumped
@@ -677,7 +705,7 @@ Game.js
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-  - - to improve readbility and santisation (truthy || falsey) for getters/setters
+    - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
