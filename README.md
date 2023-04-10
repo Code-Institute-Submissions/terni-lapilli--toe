@@ -1,4 +1,4 @@
-# **\_\*\***Tic Tac & Toe**\*\*\_**
+# **</in>Tic Tac & Toe</ins>**
 
 [![](\_documentation/Screenshots/\_\_\_"AmiResponsive: <https://ui.dev/amiresponsive?url=>")](https://ui.dev/amiresponsive?url=/ "Visit the Proof of Responsiveness: 3 Grains & Toe")
 
@@ -11,9 +11,9 @@
 
 ---
 
-## **1. Project Goals**
+## **1. GOALS/PROPOSAL**
 
-### _1.1 <ins>Game Rules</ins>_
+### _<ins>1.1 Game Rules</ins>_
 
 Here are the basic rules of Tic Tac Toe:
 
@@ -69,7 +69,7 @@ Here are the basic rules of Tic Tac Toe:
 
 ---
 
-## **2. Plan**
+## **2. PLAN**
 
 ### _<ins>2.1 User Experience</ins>_
 
@@ -113,7 +113,7 @@ Here are the basic rules of Tic Tac Toe:
 
 ---
 
-## **3. Design (UXD)**
+## **3. DESIGN & UXD**
 
 ### _<ins>3.1 App Design</ins>_
 
@@ -439,19 +439,19 @@ classDiagram
 
 1. _**Local**_
 
-- VSCode Insiders - Local
-- LivePreview
-- LiveServer: <http://127.0.0.1>
+- VSCode 1.76-1.77.1
+- LiveServer: <http://127.0.0.1:3001>
 
-2. _**Remote**_
+1. _**Remote**_
 
-- Gitpod
 - Github Pages from Github.com
 
 ### _<ins>4.2 Browsers</ins>_
 
+- MS Edge (Dev) versions 110-113
+- MS Edge versions 111
 - Google Chrome (Dev) versions 112
-- Google Chrome versions 110
+- Google Chrome versions 110-111
 - Firefox Developer Edition versions 111.0 beta
 - Polypane 13.0.3
 
@@ -475,13 +475,14 @@ classDiagram
 - HTML Language Server (VSCode)
 - CSS Language Server (VSCode)
 - HTML Validate (html-validate.vscode-html-validate, 2020-2023), version 7.13.2
-- ESLint
-- Standard
+- ESLint & Eslint.yml
+- JS42
+- Markdownlint
 - SonarLint
 - Quokka.js
 - Wallaby.js
 - Mermaid
-- JS42
+- Raycast Screenshots
 
 ### _<ins>4.6 Repository<ins>_
 
@@ -497,27 +498,29 @@ classDiagram
 
 - Prettier
 - HTML-validate
-- ESLint
+- ESLint & Eslint.yml
+- Markdownlint-cli2
 - Sonarlint
 - Webhint
 - JSDoc
+- JS42
 
-### _<ins>Frameworks Used</ins>_
+### _<ins>4.7 Frameworks Used</ins>_
 
 > Programs, Packages and Libraries used in different workflows, and where code was generated and then adapted for use in the html or the CSS as a component.
 
-#### _4.6.2 Readme Tooling_
+#### _4.7.1 Readme Tooling_
 
 - [Mermaid Live Editor](https://mermaid.live/) for Sitemap and Page hierarchy.
 - [Draw.io](https://draw.io/) for Class Diagrams and documentation.
 
-#### _4.6.3 Design Workflows_
+#### _4.7.2 Design Workflows_
 
 - [Balsmiq Desktop](https://balsamiq.com/)
 
 ---
 
-## 5. CODE
+## **5. CODE**
 
 ### _<ins>5.1 Features</ins>_
 
@@ -530,8 +533,51 @@ classDiagram
 - Utility classes for auxillary classes for debugging and configuration (strings) tasks.
 - `Try ... Catch` blocks for error handling.
 - Attempted low coupling, and high cohession, but there are a few high coupling dependencys due to state of the game and passing objects inside objects from app/UI to game logic tier.
+- Functions Styles
+  - [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures): A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+    - In `GameLogic.isAWin`, `isWinninngCombo` is a closure
+  - IIFE - [Immediate InvokeďFunction Expressions](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
+    - `StartListener.onError().errorMessage` & `MoveListener.onError().errorMessage` is a IIFE exmaple.
+  - Arrow Functons
+- _Object literals and Map Object literals_
+  - Alternative use case to `Switch..Case` state.
+  - Object literals provide a more concise and readable way of organizing code.
+  - Better if multiple options have a multiple key but more complex evaluating expressions
+  - Used in evaluating multiple input Parameters/EventTypes is `Game.js`, `GameLogic.js`, `MoveListener.js`, `StartListener.js` instead of length switch statements, can can employ default states too.
+- _Destructurting_
+  - Possible opportunity in `GameLogic.isAWin.isWinningCombo` but not yet implemented.
+  - Additionally, possible refactoring in `MoveListener.onClick` for the div's cell node attribute and values.
+      - - _Nullish coallesing Operator_ in lieu of less readable `!== null` and `!== undefined` conditional expressions.
 
-### _<ins>5.2 Comment Style</ins>_
+### _<ins>5.2 Code Patterns</ins>_
+
+- _Class based OOP_, using Javascript ES6/2015 modules, as opposed to Javascript prototypal OOP.
+  - No inhiertiance employed for MVP
+  - Class members have just enough default values, so not to cause errors on instantiation
+- _JSDoc_, expressive, for
+  - Documentation for maintainabiliy
+  - Versioning, SemVer, for method versioning bummping, and changelog notes
+  - Type checking, using IDE and Typscript language server, without compling.
+    - In pure Javascreipt, employ Typescript linting for types, without compling, using JSDoc and IDE linting and validation
+- _JSDoc_ documenting the following file/module organisation
+  - 001: Module JSDoc
+  - 002: Class Definition JSDoc
+  - 003: Declarations: Class Members JSDoc
+  - 003: Constructor: Class Constructor JSDoc
+  - 004-00n: Class Functions & Methods JSDoc
+- _Message & Trace_: Separating string and string tenplate literals into their own const block level declarations and not inline to function code (for console.log, or this.deBug._debug(), and Error messages)
+- _Embed Debugging_: Instead of litering code with console.log, which is a anti-pattern and against assessment criteria, embed debugging, logging and possibiliy unit testing as a feature of the code, not as a developer convinence.
+  - This is contrary to the assessment criteria, so instead of removing console.log API, embed it and employ it for improved maintainability.
+  - Created a debugging interface class, and encapsulated all the formating to browser/IDE console to STDOUT, STDWARN, STDERR
+  - Employ an extensible interface for debugging as complexity of code increase
+  - Have interface for testing, and improved developer experience
+- _Embed logging and error_ tracing levels into method signatures, as an optional default
+- _Embed method name_ and call tracing in method signatures, as an optional default.
+- _Named CONSTANTS_ variable names along with the `const` keyword for readability, and consistency, when hoisted higher in a block of code, say at start of the function/class method.
+  - Improved opportunity to refactor and change the constant value systems. i.e Boolean state or String State or Number states.
+- _Double Logic Gates_ Used to track the long running state of a instance, and the terminal event state of the instance purpose, i.e. a Game. These are opposing values, in a double logic gate.
+
+### _<ins>5.3 Comment Style</ins>_
 
 > Uses JSDoc docstrings for code comment
 > Uses In `//` for single line comments
@@ -559,16 +605,23 @@ classDiagram
   8. In production, there would be a common house style that all engineers would be able requred to follow.
 
 - It is the author's style to be expansive during development.
-- He would strip out code comments in a CI/CD just before pushing the code into production , but after QA and the technical writers have captured the code comments.
+- Author would strip out code comments in a CI/CD just before pushing the code into production , but after QA and the technical writers have captured the code comments, in a minification and code file reducation as this expansive documentation has a high LoC
 
-## 6. RELIABILITY
+## **6. RELIABILITY**
 
 ### _<ins>6.1 Testing & Verification</ins>_
 
 - Static Analysis like linting, code formaters, autocomplete/correction
+  - JS42.ai for inline refactoring and code hint
+  - ESlint and Prettier
 - IDE Run & Debugging: VSCode `F5` configured with the following tasks
   - `Debugger for Firefox`
   - `Microsoft Edge Tools for VS Code`
+  - `Chrome Debugger`
+- IDE Typescript Linting & Language Server with ErrorLens extension
+  - Good at identifying code hotspots at a higher stands
+  - Inline error hinting, and @ts-ignore/@ts-check annotations
+  - Do not have to complie TS rto have benefits on code quality in IDE.
 - Dyanmic Analysis
   - `Quokka.js`, with `Wallaby.js`
     - Runtime values are updated and displayed in your IDE next to your code,
@@ -580,9 +633,7 @@ classDiagram
 
 |     Page     |  Checked   | Issues . | Resolved | Passed |
 | :----------: | :--------: | :------: | :------: | :----: |
-|  Home.html   | March 28th |    -     |    -     |   -    |
-|  Folio.html  | March 28th |    -     |    -     |   -    |
-| Profile.html | March 28th |   - -    |    -     |        |
+|  Index.html   | March 28th |    -     |    -     |   -    |
 
 #### _6.2.2 CSS_
 
@@ -597,7 +648,7 @@ classDiagram
 - EsLint
   - EsLint-config-standard
   - EsLint Plugin \* dependencies
-- StandardJS, using EsLint rules, as packaged.
+- JS42.ai
 - SonarLint
 - VSCode's Javascript Langauge Server
 - VSCode's Typescript Langauge Server
@@ -622,7 +673,7 @@ classDiagram
 
 ---
 
-## 7. DEPLOY
+## **7. DEPLOY**
 
 > Uss Gherkin syntax for code based Feature definitions
 
@@ -759,8 +810,8 @@ Scenario: Game is a draw
     # And the game state could be logged
 ```
 
-- **_Helper Classes_**: `StartListener`, `MoveListener` not documented here, see [here]() for full schema, as these are auxiliary to the core intent of the app.
-- **_Utility Classes_**: `GameDebug`, `GameConfig` not documented here, see [here]() for full schema, as these are utilities to aid the running of the app.
+- ***Helper Classes***: `StartListener`, `MoveListener` not documented here, see [here]() for full schema, as these are auxiliary to the core intent of the app.
+- ***Utility Classes***: `GameDebug`, `GameConfig` not documented here, see [here]() for full schema, as these are utilities to aid the running of the app.
 
 #### _<ins>7.1.4  Future Enhancements</ins>_
 

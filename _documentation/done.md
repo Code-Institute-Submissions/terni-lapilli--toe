@@ -18,10 +18,10 @@ and may align with to [Semantic Versioning](http://semver.org/).
 ### Learning
 
 - [ ] LO1 ☑️❓❌Design an interactive Front-End web application using HTML and CSS and JavaScript based on the principles of user experience design, accessibility and responsivity
-- [ ] LO2 ☑️❓❌Test a front-end web application through the development, implementation and deployment stages.
-- [ ] LO3 ☑️❓❌Deploy a Front-End web application to a Cloud platform.
-- [ ] LO4 ☑️❓❌Maximise future maintainability through documentation, code structure and organisation.
-- [ ] LO5 ☑️❓❌Demonstrate and document the development process through a version control system such as GitHub.
+- LO2 ☑️❓❌Test a front-end web application through the development, implementation and deployment stages.
+- [x] LO3 ☑️❓❌Deploy a Front-End web application to a Cloud platform.
+- [x] LO4 ☑️❓❌Maximise future maintainability through documentation, code structure and organisation.
+- [x] LO5 ☑️❓❌Demonstrate and document the development process through a version control system such as GitHub.
 - [ ] LO6 ☑️❓LO6 Implement Front-End interactivity, using core JavaScript, JavaScript libraries or frameworks.
 
 ---
@@ -107,7 +107,7 @@ and may align with to [Semantic Versioning](http://semver.org/).
   - [x] ☑️❓ ❌The deployment procedure.
 - [ ] [4.2](#4.2) ☑️❓❌  Insert screenshots of the project features ...
   - [ ] ☑️❓❌ Give a brief description of what each feature does and ...
-  - [ ] ☑️❓❌ Explain its value to the user.
+  - [x] ☑️❓❌ Explain its value to the user.
 - [x] [4.3](#4.3) ☑️  Attribute all code from external sources to its original source
   - [ ]☑️ Via comments above the code and ...
   - [x] ☑️ For larger dependencies in the README.
@@ -130,7 +130,7 @@ and may align with to [Semantic Versioning](http://semver.org/).
 
 - [x] [5.1](#5.1) ☑️❓ Use consistent and effective markdown formatting that is ... when writing a README file:
   - [x] ☑️❓ Well-structured, ...
-  - [ ] ☑️❓ Easy to follow, and ...
+  - [x] ☑️❓ Easy to follow, and ...
   - [ ] ☑️❓ Has few grammatical errors.
 
 ### ToDo - Implement Front-End interactivity, using core JavaScript, JavaScript libraries or frameworks
