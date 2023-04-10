@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"docwriter.progress.trackFunctions": false,
+		"markdown-todo.sortByCount": false,
+		"cSpell.language": "en,en-GB,en-US"
+	}
+}
