@@ -32,6 +32,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 > **Template**
 
+## Changelog: 2023.04.10v.0.5.000.001
+
+### Bumped:
+
+- Bumped: MoveListenr to v0.5.0
+  - See GitHub Issue [#25](https://github.com/iPoetDev/terni-lapilli--toe/issues/25)
+
+### Added
+
+- Added: Object & Property Dot Notation design pattern to Block varaibles and data states
+- Added: Flow/Finite State Machine management patter to onClick and other flow state/context interfaces
+
+### Changed
+
+- Changed: See [#25](https://github.com/iPoetDev/terni-lapilli--toe/issues/25) for a list of changes.
 ## Changelog: 2023.04.06v.0.4.02.003
 
 ### Bumped
