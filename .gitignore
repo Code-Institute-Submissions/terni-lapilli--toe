@@ -6,7 +6,6 @@
 .vscode
 /docs
 jsdoc_help.md
-*.code-workspace
 TicTacToe-Class-Model.drawio
 markdownlint.yml
 .github/.pre-commit-config.yaml
