@@ -32,21 +32,76 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 > **Template**
 
-## Changelog: 2023.04.10v.0.5.000.001
+## Changelog: 2023.04.10 to 12v.0.5.000.001
+
+### Author Note
+
+- A Major logic change, a good idea (at 10 days before, i thought),
+   - How to solve the problem of multiple states of a game (beyond tic tac toe)
+    - The game state: gameRunning: a persistent, mutable, state flag for game activity
+    - Ths move state: movesOutcome: a persistent, mutable, state flag for each move's state
+    - the results state:  resultsOutcome: a persistent, mutable, state flag for the (no-)results of Win | Draw | Playon
+   - How to:
+    1) Solve for a game state that has more than binary states i.e. !=== true || false
+    2) Solve for a each move's state that has more than binary states i.e. !=== true || false
+    3) Solve for a result's state that has more than binary states i.e. !=== true || false
+    BOUNUS) Solve for a application's state that has more than binary states i.e.
+  - Concern:
+    Logic gates based on multiple true || false are indeterminate and multiple are very hard to debug
+  - Triggger cause:
+    - Code was error free except the key isGameOver was coming back @type string | undefined
+    - Upon inspection: the problem space deepened, as there was a mix of multiple booleans, string and other states to evaluated for switch and if conditions.
+  -Soltuion approach: Use Strings not Booleans
+    - String logic is deterministic, has discrete value and is predicable
+    - A Finite state machine, a prototype, was thought off, but not the full ComSci version
+  - Outcome:
+    - Side Effect: CC scores for methods trippled
+    - Side Effect: method lengths exploded (Loc)
+    - Side Effect: more methods and helpers to managing state
+    - Side Effect: Not using a state management library was not forseen
+    - Side Effect: Started with string Contants,ended up with global, class, and method states as data structures.
+  - Design Patterns
+    - Message & Traces Pattern: Pairing messages and traces for debug to console for eachg step
+    - String Constants as State: Creating different categories of State groups and enumerations
+    - Object & Property Pattern: Combing/mixing Messages + Traces with String Constants, ended with ythis design pattern for state objects, result object, outputs to carry state, results and outputs betweem methods.
+    - Refactoring to Closures: Extracting Blocks of repeating code in long methods to DRY.
+    - Methods in switch statements: Using functions and methods to enclose case logic
+- But with tons of side effects on
+  - code complexity: cyclomatic complexity(?)
+  - method lengths as Lines of Code
+  - Use of inlined data structures, i.e. the Object.Property pattern,
+    - these could be moved to TS like types, interfaces and enums: beyond scope of course
+  - Oppotunity to always refactor and optimise was a hyper stimulus.
+  - Not using typescript files or complining, missing out on CustomTypes, Interfaces and Enums
+ But this biggest side effect has been yhe learning of the javascript and design patterns at sake of the assignments objective.
+ And untested code as off 04/12.
 
 ### Bumped:
 
 - Bumped: MoveListenr to v0.5.0
   - See GitHub Issue [#25](https://github.com/iPoetDev/terni-lapilli--toe/issues/25)
+- Bumped: GameLogic: to v0.5.0
+- Bumped: Game: to v0.5.0
+- Bumped: GameBoard: to v0.4.1
+- No Bumped: GamePieces: fixed v0.4.2
 
 ### Added
 
 - Added: Object & Property Dot Notation design pattern to Block varaibles and data states
 - Added: Flow/Finite State Machine management patter to onClick and other flow state/context interfaces
+  - This is not a true FSM, just author's first version by native conception.
+  - Would have used a external librar if known, has experience, e.g. Xstate.
+  - Planning for this without experience is tough.
 
 ### Changed
 
-- Changed: See [#25](https://github.com/iPoetDev/terni-lapilli--toe/issues/25) for a list of changes.
+- MoveListener:
+  - Changed: See [#25](https://github.com/iPoetDev/terni-lapilli--toe/issues/25) for a list of types of changes.
+- Game:
+  - Changed: See [#26](https://github.com/iPoetDev/terni-lapilli--toe/issues/25) for a list of types of changes. else <https://api.codestream.com/c/ZBNk4xDOQ2o6RTpe/1_OFT7N2QVCAZz97zgqCDQ>
+- GameLogic:
+  - Changed: See [#27](https://github.com/iPoetDev/terni-lapilli--toe/issues/26) for a list of types of changes.
+
 ## Changelog: 2023.04.06v.0.4.02.003
 
 ### Bumped
