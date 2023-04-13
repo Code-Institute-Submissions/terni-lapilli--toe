@@ -32,6 +32,77 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 
 > **Template**
 
+## Changelog: 2023.04.10 to 13v.0.5.000.001
+
+### Author Note: Game.js: The Game Controller, and State Machine
+
+See: Too Big for one issue: split between 3 related parts.
+[#29: Game.js Part 1: Constrcutor, onIti, isGameStarted, checkMove, updateGrid](https://github.com/iPoetDev/terni-lapilli--toe/issues/29)
+[#30: Game.js Part 2: makeMove and sister functions](https://github.com/iPoetDev/terni-lapilli--toe/issues/30)
+[#31: Game.js Part 3@ nextTurn, isGameOver, endGame,evaluateParameter](https://github.com/iPoetDev/terni-lapilli--toe/issues/31)
+
+Changelog
+
+- Updated: Bump for all code sections/jsdoc
+- Added the new start state constants to this.STATES.game
+- See StartListener onInit & ``isStartClicked
+
+- Added Object+Property to constructor,
+- Added a state engine to `onInit` , `isGameStarted`, `checkMove`, `makeMove`
+- `isGameOver` is better option to pass a predefined state between methods
+- Add state engine to yhe class properties. Too late to effect that change of idea.
+
+*State Machine Objects*
+
+- These state engine data structures are excessiive, not DRY
+- Messy learning and implementation, for future improvements
+- Use a state machine libraries, as problem has been solved by others
+
+- Fixed pieces: this.gamePieces/currenPiece : undefined - I think-
+- Todo: Split longer methods into smaller helper methods and enclosures/closure functions.
+- Issue: This class has become too big to manually check
+- Todo: Need to be split into enums. types, interfaces and other classes.
+- Issue: Execessive state management, 100^5 explicit is a symptom no automated test cases
+- Problem: State management between classes is hard without testing and tesyt cases
+- Design Choice: Class design was a too expensive design approach to fix later on .
+- Noted: Game mechanics in IRL use Finite State Machines,
+  - Ooops: This project stumbled into this complexity
+
+### Bumped
+
+- `StartListener.js`
+  - See <https://api.codestream.com/c/ZBNk4xDOQ2o6RTpe/up6V_D8ATCev4IXWwmdWuw>
+- `App.js`
+  - <https://github.com/iPoetDev/terni-lapilli--toe/issues/28>
+
+### Added
+
+- `App.js`, `StartListener.js`,
+  - Object+Property pattern: Constructor (app object)
+  - JSDoc type annotations
+  - Local state obejct to onInit, isStartClicked methods -> Further refectoring
+    - onInit is bound, so needs to return void, but updates listener startClicked flag
+    - isStartClicked returns STATE snd updates the startClicked flag and gameRunning flag
+
+### Changed
+
+- `App.js`
+  - Changed: applied the app.property, error.property to method called and param assigns in nominal flow and error flow states
+- `StartListener.js`
+  - Changed: applied `Listener` object to  constructor, passing this to addListener
+  - Updated: addListener using the objects passed property values to improve code readbility.
+  - `onError`@ Remodel method, removing the 1st of 2  switches  for a Object+Property pattern, improving readability and logic statement issues.
+
+### No Mutate
+
+- `App.js`
+  - No change to `onError` method: @ v0.4.2
+  - Remove `onExit`@ v0.4.2
+- `StartListener.js`
+  - evaluateParameters, evaluateEventType:@ v0.4.1
+
+### Removed
+
 ## Changelog: 2023.04.10 to 12v.0.5.000.001
 
 ### Author Note
