@@ -37,11 +37,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
 ### Author Note
 
 - A Major logic change, a good idea (at 10 days before, i thought),
-   - How to solve the problem of multiple states of a game (beyond tic tac toe)
-    - The game state: gameRunning: a persistent, mutable, state flag for game activity
-    - Ths move state: movesOutcome: a persistent, mutable, state flag for each move's state
-    - the results state:  resultsOutcome: a persistent, mutable, state flag for the (no-)results of Win | Draw | Playon
-   - How to:
+  - How to solve the problem of multiple states of a game (beyond tic tac toe)
+  - The game state: gameRunning: a persistent, mutable, state flag for game activity
+  - Ths move state: movesOutcome: a persistent, mutable, state flag for each move's state
+  - the results state:  resultsOutcome: a persistent, mutable, state flag for the (no-)results of Win | Draw | Playon
+  - How to:
     1) Solve for a game state that has more than binary states i.e. !=== true || false
     2) Solve for a each move's state that has more than binary states i.e. !=== true || false
     3) Solve for a result's state that has more than binary states i.e. !=== true || false
@@ -76,7 +76,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and adhere
  But this biggest side effect has been yhe learning of the javascript and design patterns at sake of the assignments objective.
  And untested code as off 04/12.
 
-### Bumped:
+### Bumped
 
 - Bumped: MoveListenr to v0.5.0
   - See GitHub Issue [#25](https://github.com/iPoetDev/terni-lapilli--toe/issues/25)
@@ -775,7 +775,7 @@ Game.js
 ### Added
 
 - Added: `GamePieces,js`: New functions: `checkAPiece`, `hasAPiece`  [001]
-    - - to improve readbility and santisation (truthy || falsey) for getters/setters
+  - - to improve readbility and santisation (truthy || falsey) for getters/setters
 - Added: `GamePieces.js`: New Param checking `evaulatePieces` [001]
   - to santise check for {type} strings in the constructor, @returns array for game pieces storage
 - Added: `GamePieces,js`: New Doctsrings for each function. [001]
